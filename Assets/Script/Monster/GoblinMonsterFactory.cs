@@ -23,10 +23,10 @@ public class GoblinMonsterFactory : MonoBehaviour
         monster.speed = speed;
 
         // Thi?t l?p hành vi ??c bi?t cho lo?i monster này
-        var goblinMonster = monsterObject.GetComponent<GoblinMonster>();
+       /* var goblinMonster = monsterObject.GetComponent<GoblinMonster>();
         // goblin monster ch?a có
         goblinMonster.target = target;
-        goblinMonster.damage = damage;
+        goblinMonster.damage = damage;*/
 
         return monster;
     }
