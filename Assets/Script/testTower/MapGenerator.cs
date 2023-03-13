@@ -5,14 +5,14 @@ using UnityEngine;
 public class MapGenerator : MonoBehaviour
 {
     public GameObject mapTile;
-    
+
     [SerializeField] private int mapWidth;
     [SerializeField] private int mapHeight;
 
     public static List<GameObject> mapTiles = new List<GameObject>();
     public static List<GameObject> pathTiles = new List<GameObject>();
 
-    
+
 
     public static GameObject startTile;
     public static GameObject endTile;
@@ -31,7 +31,7 @@ public class MapGenerator : MonoBehaviour
     private List<GameObject> getTopEdgeTiles()
     {
         List<GameObject> edgeTiles = new List<GameObject>();
-        for(int i = mapWidth * (mapHeight-1); i< mapWidth * mapHeight; i++)
+        for (int i = mapWidth * (mapHeight - 1); i < mapWidth * mapHeight; i++)
         {
 
             edgeTiles.Add(mapTiles[i]);
@@ -46,7 +46,7 @@ public class MapGenerator : MonoBehaviour
 
     private List<GameObject> getBottomEdgeTiles()
     {
-        List <GameObject> edgeTiles = new List<GameObject>();
+        List<GameObject> edgeTiles = new List<GameObject>();
 
         for (int i = 0; i < mapWidth; i++)
         {
@@ -83,9 +83,9 @@ public class MapGenerator : MonoBehaviour
 
     private void generateMap()
     {
-        for(int y= 0; y < mapHeight; y++)
+        for (int y = 0; y < mapHeight; y++)
         {
-            for(int x=0; x < mapWidth; x++)
+            for (int x = 0; x < mapWidth; x++)
             {
                 GameObject newTile = Instantiate(mapTile);
                 mapTiles.Add(newTile);
@@ -97,12 +97,12 @@ public class MapGenerator : MonoBehaviour
 
         }
 
-    List<GameObject> topEdgeTiles = getTopEdgeTiles();
+        List<GameObject> topEdgeTiles = getTopEdgeTiles();
         List<GameObject> bottomEdgeTiles = getBottomEdgeTiles();
 
-        
 
-        int rand1 = Random.Range(0,mapWidth);
+
+        int rand1 = Random.Range(0, mapWidth);
         int rand2 = Random.Range(0, mapWidth);
         startTile = topEdgeTiles[rand1];
         endTile = bottomEdgeTiles[rand2];
@@ -116,12 +116,12 @@ public class MapGenerator : MonoBehaviour
         while (reachedX == false)
         {
             loopCount++;
-            if(loopCount > 100)
+            if (loopCount > 100)
             {
                 break;
             }
 
-            if(currentTile.transform.position.x > endTile.transform.position.x)
+            if (currentTile.transform.position.x > endTile.transform.position.x)
             {
                 moveLeft();
             }
@@ -138,15 +138,15 @@ public class MapGenerator : MonoBehaviour
 
         while (reachedY == false)
         {
-            
+
 
             if (currentTile.transform.position.y > endTile.transform.position.y)
             {
-               moveDown();
+                moveDown();
             }
-            else 
+            else
             {
-               reachedY = true;
+                reachedY = true;
             }
 
 
@@ -155,7 +155,7 @@ public class MapGenerator : MonoBehaviour
         pathTiles.Add(endTile);
 
 
-        
+
         foreach (GameObject obj in pathTiles)
         {
             obj.GetComponent<SpriteRenderer>().color = pathColor;
