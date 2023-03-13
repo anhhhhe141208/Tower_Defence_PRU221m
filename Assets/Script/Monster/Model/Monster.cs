@@ -4,14 +4,14 @@ using UnityEngine;
 
 public abstract class Monster : IMonster
 {
-    // Các thông s? c?a monster
+    // Các thông so cua monster
     public int health;
     public int speed;
 
-    // Các hành vi chung c?a monster
+    // Các behavior chung cua monster
     public void Move()
     {
-        // Di chuy?n monster ??n ?ích
+        // monster di chuyen den dich
     }
 
     public void TakeDamage(int damage)
@@ -26,9 +26,9 @@ public abstract class Monster : IMonster
 
     public void Die()
     {
-        // X? lý khi monster b? tiêu di?t
+        // xu li khi monster bi tieu diet
     }
 
-    // Hành vi ??c bi?t c?a t?ng lo?i monster
+    // hanh vi dac biet cua tung loai monster
     public abstract void SpecialAbility();
 }

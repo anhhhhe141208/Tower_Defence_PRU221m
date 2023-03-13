@@ -13,8 +13,4 @@ public interface IShooter
     // chon muc tieu gan nhat
 
     //----------------------
-
-    // xong a cho class Tower implement cai class nay
-
-    // xong cac class tower1,tower2,tower3 abstract tu cai Tower  
 }
