@@ -11,11 +11,6 @@ public class GoblinMonsterFactory : MonoBehaviour
     public int health = 100;
     public int speed = 5;
 
-    private void Start()
-    {
-        Vector3 a = new Vector3(0, 0, 0);
-        CreateMonster(a,transform);
-    }
     public IMonster CreateMonster(Vector3 startPosition, Transform target)
     {
         // Tao mot doi tuonng monster tu prefab
