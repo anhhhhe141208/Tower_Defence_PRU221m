@@ -9,13 +9,17 @@ public abstract class Monster : MonoBehaviour, IMonster
     public int health;
     public int speed;
     public Vector3[] path = new Vector3[4];
-    public Tween t;
-
+    private SpriteRenderer spriteRenderer;
     // Các behavior chung cua monster
     public void Move()
     {
+        spriteRenderer = this.GetComponent<SpriteRenderer>();
         // monster di chuyen den dich
-        t = this.transform.DOPath(path, 4, PathType.Linear);
+        //flip sprite moi step
+        this.transform.DOPath(path, 4, PathType.Linear);
+            /*.SetLoops(1)
+            .SetEase(ease)
+            .OnStepComplete(FlipScpite);*/
     }
 
     public void TakeDamage(int damage)
@@ -35,4 +39,9 @@ public abstract class Monster : MonoBehaviour, IMonster
 
     // hanh vi dac biet cua tung loai monster
     public abstract void SpecialAbility();
+
+    private void FlipScpite()
+    {
+        spriteRenderer.flipX = !spriteRenderer.flipX;
+    }
 }
