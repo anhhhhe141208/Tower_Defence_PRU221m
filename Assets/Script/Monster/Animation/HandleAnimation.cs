@@ -15,14 +15,15 @@ public class HandleAnimation : MonoBehaviour
 
     private void Update()
     {
+        // ket thuc animation
         if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1.0f)
         {
             animator.SetBool("isHit", false);
-            Debug.Log(animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
         }
     }
     public void monsterHitted() 
     {
+        // start animation
         animator.SetBool("isHit", true);
     }
 

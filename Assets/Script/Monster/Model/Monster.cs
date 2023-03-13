@@ -18,7 +18,7 @@ public abstract class Monster : MonoBehaviour, IMonster
 
     private void Start()
     {
-        //healthBar = GetComponent<HealthBarHandler>().FillAmountImage;
+        healthBar = GetComponentInChildren<HealthBarHandler>().FillAmountImage;
         currentHealth = health;
     }
     public void Move()
@@ -31,11 +31,13 @@ public abstract class Monster : MonoBehaviour, IMonster
             .OnStepComplete(FlipScpite);*/
     }
 
+    // take dmg -> -hp, run animation
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
         hitAnimation();
-        //healthBarGetDamge();
+        Debug.Log(currentHealth + "-" + health);
+        healthBarGetDamge();
         if (currentHealth <= 0)
         {
             Die();
@@ -45,6 +47,7 @@ public abstract class Monster : MonoBehaviour, IMonster
     public void Die()
     {
         // xu li khi monster bi tieu diet
+        Destroy(gameObject);
     }
 
     private void hitAnimation()
@@ -56,7 +59,7 @@ public abstract class Monster : MonoBehaviour, IMonster
     {
         healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount,
             currentHealth / health,
-            Time.deltaTime * 10f);
+            10f);
     }
 
     // hanh vi dac biet cua tung loai monster

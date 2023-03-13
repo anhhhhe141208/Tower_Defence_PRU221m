@@ -201,10 +201,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8153164978687408787}
-  - component: {fileID: 8153164978687408786}
-  - component: {fileID: 8153164978687408785}
   - component: {fileID: 8153164978687408784}
   - component: {fileID: 8153164978687408791}
+  - component: {fileID: 8153164978687408785}
+  - component: {fileID: 8153164978687408786}
   m_Layer: 0
   m_Name: MonsterPig
   m_TagString: Untagged
@@ -228,38 +228,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8153164978687408786
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8153164978687408790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d191b41f060a6114288a72bc8a17a112, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 50
-  speed: 0
-  path:
-  - {x: -10, y: 3, z: 0}
-  - {x: 10, y: 3, z: 0}
-  - {x: 10, y: -3, z: 0}
-  - {x: -10, y: -3, z: 0}
---- !u!114 &8153164978687408785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8153164978687408790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d63723e422138248accee6277e9c37a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
 --- !u!212 &8153164978687408784
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -332,6 +300,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8153164978687408785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8153164978687408790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d63723e422138248accee6277e9c37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+--- !u!114 &8153164978687408786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8153164978687408790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d191b41f060a6114288a72bc8a17a112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  speed: 0
+  path:
+  - {x: -10, y: 3, z: 0}
+  - {x: 10, y: 3, z: 0}
+  - {x: 10, y: -3, z: 0}
+  - {x: -10, y: -3, z: 0}
 --- !u!1 &8153164978893067713
 GameObject:
   m_ObjectHideFlags: 0
