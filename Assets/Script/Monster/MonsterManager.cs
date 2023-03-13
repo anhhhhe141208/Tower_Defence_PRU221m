@@ -5,7 +5,7 @@ using UnityEngine;
 public class MonsterManager : MonoBehaviour
 {
     // Factory cua monster goblin
-    public GoblinMonsterFactory monsterFactory;
+    public GoblinMonsterFactory goblinFactory;
 
     // Vi tri bat dau cua monster
     public Vector3 startPosition;
@@ -15,7 +15,7 @@ public class MonsterManager : MonoBehaviour
     void Start()
     {
         // tao monster = monster factory
-        var monster = monsterFactory.CreateMonster(startPosition, target);
+        var monster = goblinFactory.CreateMonster(startPosition, target);
 
         // di chuyen monster den dich
         monster.Move();

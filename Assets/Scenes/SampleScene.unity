@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af3aac0699cf89343b27d8c52257392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterFactory: {fileID: 1343459270}
+  goblinFactory: {fileID: 1343459270}
   startPosition: {x: 0, y: 0, z: 0}
   target: {fileID: 616799607}
 --- !u!1 &1343459268
@@ -312,7 +312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343459268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 9.91, y: -3.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

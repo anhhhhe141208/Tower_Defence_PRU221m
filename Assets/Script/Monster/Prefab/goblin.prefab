@@ -99,3 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   speed: 0
+  path:
+  - {x: -10, y: 3, z: 0}
+  - {x: 10, y: 3, z: 0}
+  - {x: 10, y: -3, z: 0}
+  - {x: -10, y: -3, z: 0}
