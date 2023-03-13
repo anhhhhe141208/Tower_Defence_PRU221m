@@ -4,7 +4,6 @@ using UnityEngine;
 
 public interface IMonster 
 {
-
         void Move();
         void SpecialAbility();
         void TakeDamage(int damage);

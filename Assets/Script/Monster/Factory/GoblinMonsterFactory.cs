@@ -4,30 +4,28 @@ using UnityEngine;
 
 public class GoblinMonsterFactory : MonoBehaviour
 {
-    // Prefab c?a monster
+    // Prefab cua monster
     public GameObject monsterPrefab;
 
     // Các thông s? c?a monster
     public int health = 100;
     public int speed = 5;
-    public int damage = 20;
 
+    private void Start()
+    {
+        Vector3 a = new Vector3(0, 0, 0);
+        CreateMonster(a,transform);
+    }
     public IMonster CreateMonster(Vector3 startPosition, Transform target)
     {
-        // T?o m?t ??i t??ng monster t? prefab
+        // Tao mot doi tuonng monster tu prefab
         GameObject monsterObject = Instantiate(monsterPrefab, startPosition, Quaternion.identity);
 
-        // Thi?t l?p các thông s? c?a monster
-        var monster = monsterObject.GetComponent<Monster>();
-        monster.health = health;
-        monster.speed = speed;
+        // thiet lap thong so cho loai monster nay
+        var goblinMonster = monsterObject.GetComponent<Goblin>();
+        goblinMonster.health = health;  
+        goblinMonster.speed = speed;
 
-        // Thi?t l?p hành vi ??c bi?t cho lo?i monster này
-       /* var goblinMonster = monsterObject.GetComponent<GoblinMonster>();
-        // goblin monster ch?a có
-        goblinMonster.target = target;
-        goblinMonster.damage = damage;*/
-
-        return monster;
+        return goblinMonster;
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Monster : IMonster
+public abstract class Monster : MonoBehaviour, IMonster
 {
     // Các thông so cua monster
     public int health;

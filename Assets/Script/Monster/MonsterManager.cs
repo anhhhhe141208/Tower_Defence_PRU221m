@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class MonsterManager : MonoBehaviour
 {
-    // Factory c?a monster
+    // Factory cua monster goblin
     public GoblinMonsterFactory monsterFactory;
 
-    // V? trí b?t ??u c?a monster
+    // Vi tri bat dau cua monster
     public Vector3 startPosition;
 
-    // ?i?m ?ích mà monster c?n ?i ??n
+    // diem dich mà monster can den
     public Transform target;
     void Start()
     {
-        // T?o m?t ??i t??ng monster t? factory
+        // tao monster = monster factory
         var monster = monsterFactory.CreateMonster(startPosition, target);
 
-        // Di chuy?n monster ??n ?ích
+        // di chuyen monster den dich
         monster.Move();
 
-        // G?i hành vi ??c bi?t c?a monster
+        // goi hanh vi dac biet cua monster
         monster.SpecialAbility();
     }
 
