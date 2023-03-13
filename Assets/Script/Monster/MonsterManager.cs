@@ -12,21 +12,26 @@ public class MonsterManager : MonoBehaviour
 
     // diem dich mà monster can den
     public Transform target;
+
+    Monster monster;
     void Start()
     {
         // tao monster = monster factory
-        var monster = goblinFactory.CreateMonster(startPosition, target);
+        monster = (Monster)goblinFactory.CreateMonster(startPosition, target);
 
         // di chuyen monster den dich
         monster.Move();
 
         // goi hanh vi dac biet cua monster
         monster.SpecialAbility();
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+            monster.TakeDamage(5f);
     }
 }

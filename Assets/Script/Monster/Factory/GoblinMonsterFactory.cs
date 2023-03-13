@@ -8,8 +8,8 @@ public class GoblinMonsterFactory : MonoBehaviour
     public GameObject monsterPrefab;
 
     // Các thông s? c?a monster
-    public int health = 100;
-    public int speed = 5;
+    public float health = 100;
+    public float speed = 5;
 
     public IMonster CreateMonster(Vector3 startPosition, Transform target)
     {

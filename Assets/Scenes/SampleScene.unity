@@ -192,7 +192,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.9433962, g: 0.4351473, b: 0.29725876, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -331,6 +331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77783d38cafa67845bdf6fc5cc53e67c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 2225141094887340806, guid: a4d39058bbd042143bd07fee34fd6a42, type: 3}
+  monsterPrefab: {fileID: 8153164978687408790, guid: 6c34cc3369a4a55428acab8eee9e1431, type: 3}
   health: 100
   speed: 5
