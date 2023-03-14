@@ -325,13 +325,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d191b41f060a6114288a72bc8a17a112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 0
   speed: 0
   path:
-  - {x: -10, y: 3, z: 0}
-  - {x: 10, y: 3, z: 0}
-  - {x: 10, y: -3, z: 0}
+  - {x: -16, y: 5, z: 0}
+  - {x: -10, y: 5, z: 0}
   - {x: -10, y: -3, z: 0}
+  - {x: -15, y: -3, z: 0}
+  - {x: -15, y: -5, z: 0}
+  - {x: 10, y: -5, z: 0}
+  - {x: 10, y: 5, z: 0}
 --- !u!1 &8153164978893067713
 GameObject:
   m_ObjectHideFlags: 0

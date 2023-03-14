@@ -10,7 +10,7 @@ public abstract class Monster : MonoBehaviour, IMonster
     // Các thông so cua monster
     public float health;
     public float speed;
-    public Vector3[] path = new Vector3[4];
+    public Vector3[] path = new Vector3[7];
 
     private float currentHealth;
     private Image healthBar;
@@ -21,12 +21,13 @@ public abstract class Monster : MonoBehaviour, IMonster
     {
         healthBar = GetComponentInChildren<HealthBarHandler>().FillAmountImage;
         currentHealth = health;
+        this.transform.DOScaleX(1,0);
     }
     public void Move()
     {
         // monster di chuyen den dich
         this.transform
-            .DOPath(path, 4, PathType.Linear)
+            .DOPath(path, 15, PathType.Linear)
             .OnWaypointChange(MyWaypointChangeHandler)
             .OnComplete(reachTarget);
     }
@@ -47,15 +48,19 @@ public abstract class Monster : MonoBehaviour, IMonster
     public void MyWaypointChangeHandler(int waypointIndex)
     {
         // N?u Tween ?i qua waypoint th? hai
-        if (waypointIndex + 1 >= path.Length)
+        if (waypointIndex + 1 <= path.Length - 1)
         {
-            var direction = (path[waypointIndex] - path[waypointIndex]).normalized;
-            if (direction.x < 0)
+            var direction = (path[waypointIndex] - path[waypointIndex + 1]).normalized;
+            Debug.Log(direction);
+            if (direction.x > 0)
             {
-                Vector3 scale = transform.localScale;
-                scale.x *= -1;
-                transform.localScale = scale;
-                Debug.Log(true);
+                Debug.Log("turn left");
+                this.transform.DOScaleX(1, 0);
+            }
+            else 
+            {
+                Debug.Log("turn right");
+                this.transform.DOScaleX(-1, 0);
             }
         }
     }
