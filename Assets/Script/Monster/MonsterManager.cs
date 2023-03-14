@@ -10,14 +10,12 @@ public class MonsterManager : MonoBehaviour
     // Vi tri bat dau cua monster
     public Vector3 startPosition;
 
-    // diem dich mà monster can den
-    public Transform target;
 
     Monster monster;
     void Start()
     {
         // tao monster = monster factory
-        monster = (Monster)goblinFactory.CreateMonster(startPosition, target);
+        monster = (Monster)goblinFactory.CreateMonster(startPosition);
 
         // di chuyen monster den dich
         monster.Move();

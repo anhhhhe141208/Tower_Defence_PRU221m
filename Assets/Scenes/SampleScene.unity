@@ -285,8 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goblinFactory: {fileID: 1343459270}
-  startPosition: {x: 0, y: 0, z: 0}
-  target: {fileID: 616799607}
+  startPosition: {x: -10, y: 3, z: 0}
 --- !u!1001 &1209476439
 PrefabInstance:
   m_ObjectHideFlags: 0

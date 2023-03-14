@@ -12,8 +12,9 @@ public abstract class Monster : MonoBehaviour, IMonster
     public float speed;
     public Vector3[] path = new Vector3[4];
 
-    private float currentHealth ;
+    private float currentHealth;
     private Image healthBar;
+    private Tween tween;
     // Các behavior chung cua monster
 
     private void Start()
@@ -24,14 +25,13 @@ public abstract class Monster : MonoBehaviour, IMonster
     public void Move()
     {
         // monster di chuyen den dich
-        //flip sprite moi step
-        this.transform.DOPath(path, 4, PathType.Linear);
-            /*.SetLoops(1)
-            .SetEase(ease)
-            .OnStepComplete(FlipScpite);*/
+        this.transform
+            .DOPath(path, 4, PathType.Linear)
+            .OnWaypointChange(MyWaypointChangeHandler)
+            .OnComplete(reachTarget);
     }
 
-    // take dmg -> -hp, run animation
+    // take dmg -> -hp, run animation -> die
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
@@ -43,11 +43,38 @@ public abstract class Monster : MonoBehaviour, IMonster
             Die();
         }
     }
-
+    // doing
+    public void MyWaypointChangeHandler(int waypointIndex)
+    {
+        // N?u Tween ?i qua waypoint th? hai
+        if (waypointIndex + 1 >= path.Length)
+        {
+            var direction = (path[waypointIndex] - path[waypointIndex]).normalized;
+            if (direction.x < 0)
+            {
+                Vector3 scale = transform.localScale;
+                scale.x *= -1;
+                transform.localScale = scale;
+                Debug.Log(true);
+            }
+        }
+    }
+    // xu li khi monster bi tieu diet
     public void Die()
     {
-        // xu li khi monster bi tieu diet
+        //temp
         Destroy(gameObject);
+
+        //To Do: add: + tien
+    }
+
+    // xu li khi monster den dich
+    public void reachTarget() 
+    {
+        //temp
+        Destroy(gameObject);
+
+        // To Do : - tim <3 
     }
 
     private void hitAnimation()

@@ -11,7 +11,7 @@ public class GoblinMonsterFactory : MonoBehaviour
     public float health = 100;
     public float speed = 5;
 
-    public IMonster CreateMonster(Vector3 startPosition, Transform target)
+    public IMonster CreateMonster(Vector3 startPosition)
     {
         // Tao mot doi tuonng monster tu prefab
         GameObject monsterObject = Instantiate(monsterPrefab, startPosition, Quaternion.identity);
