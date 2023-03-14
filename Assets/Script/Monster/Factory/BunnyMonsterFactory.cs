@@ -2,25 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoblinMonsterFactory : MonoBehaviour
+public class BunnyMonsterFactory : MonoBehaviour
 {
     // Prefab cua monster
     public GameObject monsterPrefab;
 
     // Các thông s? c?a monster
-    public int health = 100;
-    public int speed = 5;
+    public float health = 100;
+    public float speed = 5;
 
-    public IMonster CreateMonster(Vector3 startPosition, Transform target)
+    public IMonster CreateMonster(Vector3 startPosition)
     {
         // Tao mot doi tuonng monster tu prefab
         GameObject monsterObject = Instantiate(monsterPrefab, startPosition, Quaternion.identity);
 
         // thiet lap thong so cho loai monster nay
-        var goblinMonster = monsterObject.GetComponent<Goblin>();
-        goblinMonster.health = health;  
-        goblinMonster.speed = speed;
+        var bunnyMonster = monsterObject.GetComponent<Bunny>();
+        bunnyMonster.health = health;
+        bunnyMonster.speed = speed;
 
-        return goblinMonster;
+        return bunnyMonster;
     }
 }
