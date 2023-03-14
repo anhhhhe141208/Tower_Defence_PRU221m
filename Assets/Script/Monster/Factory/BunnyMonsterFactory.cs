@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoblinMonsterFactory : MonoBehaviour
+public class BunnyMonsterFactory : MonoBehaviour
 {
     // Prefab cua monster
     public GameObject monsterPrefab;
@@ -17,10 +17,10 @@ public class GoblinMonsterFactory : MonoBehaviour
         GameObject monsterObject = Instantiate(monsterPrefab, startPosition, Quaternion.identity);
 
         // thiet lap thong so cho loai monster nay
-        var goblinMonster = monsterObject.GetComponent<Goblin>();
-        goblinMonster.health = health;  
-        goblinMonster.speed = speed;
+        var bunnyMonster = monsterObject.GetComponent<Bunny>();
+        bunnyMonster.health = health;
+        bunnyMonster.speed = speed;
 
-        return goblinMonster;
+        return bunnyMonster;
     }
 }

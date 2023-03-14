@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wolf : Monster
+public class Pig : Monster
 {
     public override void SpecialAbility()
     {
+        
     }
 }
+

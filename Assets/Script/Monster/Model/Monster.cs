@@ -10,7 +10,7 @@ public abstract class Monster : MonoBehaviour, IMonster
     // Các thông so cua monster
     public float health;
     public float speed;
-    public Vector3[] path = new Vector3[7];
+    public Vector3[] path = new Vector3[10];
 
     private float currentHealth;
     private Image healthBar;

@@ -15,6 +15,7 @@ public class HandleAnimation : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log(animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
         // ket thuc animation
         if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1.0f)
         {
