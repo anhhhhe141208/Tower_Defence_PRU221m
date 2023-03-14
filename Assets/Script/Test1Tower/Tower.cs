@@ -1,14 +1,16 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tower : MonoBehaviour
+public abstract class Tower : MonoBehaviour
 {
     [SerializeField] private float range;
-    [SerializeField] private float damage;
+    [SerializeField] public float damage;
     [SerializeField] private float timeBetweenShots;
     private float nextTimeToShoot;
     public GameObject currentTarget;
+
+    public abstract void shoot();
 
     void Start()
     {
@@ -19,8 +21,6 @@ public class Tower : MonoBehaviour
     {
         GameObject currentNearstEnemy = null;
         float distance = Mathf.Infinity;
-
-
 
         foreach (GameObject enemy in Enemies.enemies)
         {
@@ -34,8 +34,6 @@ public class Tower : MonoBehaviour
                     currentNearstEnemy = enemy;
                 }
             }
-
-
         }
 
         if (distance <= range)
@@ -45,15 +43,6 @@ public class Tower : MonoBehaviour
         else
         {
             currentTarget = null;
-        }
-    }
-
-    protected virtual void shoot()
-    {
-        if (currentTarget != null)
-        {
-            Enemy enemyScript = currentTarget.GetComponent<Enemy>();
-            enemyScript.takeDamage(damage);
         }
     }
 
@@ -70,4 +59,3 @@ public class Tower : MonoBehaviour
         }
     }
 }
-*/

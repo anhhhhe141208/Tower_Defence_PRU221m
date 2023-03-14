@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,4 +14,3 @@ public class Bullet : MonoBehaviour
         transform.position += transform.right * 0.25f;
     }
 }
-*/
