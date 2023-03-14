@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af3aac0699cf89343b27d8c52257392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pigFactory: {fileID: 196668827}
+  factory: {fileID: 1293021337}
   startPosition: {x: -16, y: 5, z: 0}
 --- !u!1 &898270424
 GameObject:
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f843b7780b8e3c40975ca3d99f5f5de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterPrefab: {fileID: 0}
+  monsterPrefab: {fileID: 1759972399}
   health: 100
   speed: 5
 --- !u!1 &1293021335
@@ -556,6 +556,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1759972399 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 50176798018786245, guid: d48d06a673b5d3e489d5b631597c4d4c, type: 3}
+  m_PrefabInstance: {fileID: 8493159657357559674}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2073767070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -563,6 +568,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8153164978687408784, guid: 6c34cc3369a4a55428acab8eee9e1431, type: 3}
+      propertyPath: m_Size.x
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8153164978687408784, guid: 6c34cc3369a4a55428acab8eee9e1431, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8153164978687408784, guid: 6c34cc3369a4a55428acab8eee9e1431, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8153164978687408787, guid: 6c34cc3369a4a55428acab8eee9e1431, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -611,6 +628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MonsterPig
       objectReference: {fileID: 0}
+    - target: {fileID: 8153164978687408791, guid: 6c34cc3369a4a55428acab8eee9e1431, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0effdb625781b03458cf8b4db9c08ed8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c34cc3369a4a55428acab8eee9e1431, type: 3}
 --- !u!1001 &6218110573268956802
@@ -681,24 +702,36 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8247925038600802615, guid: de6b4abb57b5802448c06af13eab5c38, type: 3}
-      propertyPath: path.Array.size
-      value: 2
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8247925038600802615, guid: de6b4abb57b5802448c06af13eab5c38, type: 3}
-      propertyPath: path.Array.data[0].x
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247925038600802615, guid: de6b4abb57b5802448c06af13eab5c38, type: 3}
+      propertyPath: path.Array.size
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8247925038600802615, guid: de6b4abb57b5802448c06af13eab5c38, type: 3}
+      propertyPath: path.Array.data[0].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247925038600802615, guid: de6b4abb57b5802448c06af13eab5c38, type: 3}
       propertyPath: path.Array.data[0].y
-      value: -5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8247925038600802615, guid: de6b4abb57b5802448c06af13eab5c38, type: 3}
       propertyPath: path.Array.data[1].x
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8247925038600802615, guid: de6b4abb57b5802448c06af13eab5c38, type: 3}
       propertyPath: path.Array.data[1].y
-      value: 5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722077488743269883, guid: de6b4abb57b5802448c06af13eab5c38, type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6b4abb57b5802448c06af13eab5c38, type: 3}
@@ -714,9 +747,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 46966265368446426, guid: d48d06a673b5d3e489d5b631597c4d4c, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 46966265368446426, guid: d48d06a673b5d3e489d5b631597c4d4c, type: 3}
+      propertyPath: health
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 50176798018786245, guid: d48d06a673b5d3e489d5b631597c4d4c, type: 3}
       propertyPath: m_Name
       value: MonsterBunny
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977710753909917002, guid: d48d06a673b5d3e489d5b631597c4d4c, type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6172658947817510315, guid: d48d06a673b5d3e489d5b631597c4d4c, type: 3}
       propertyPath: m_RootOrder

@@ -22,6 +22,17 @@ public abstract class Monster : MonoBehaviour, IMonster
         healthBar = GetComponentInChildren<HealthBarHandler>().FillAmountImage;
         currentHealth = health;
         this.transform.DOScaleX(1,0);
+        path[0] = new Vector3(-16, 5, 0);
+        path[1] = new Vector3(-10, 5, 0);
+        path[2] = new Vector3(-10, -3, 0);
+        path[3] = new Vector3(-15, -3, 0);
+        path[4] = new Vector3(-15, -5, 0);
+
+        path[5] = new Vector3(10, -5, 0);
+        path[6] = new Vector3(10, 5, 0);
+        path[7] = new Vector3(13, 5, 0);
+        path[8] = new Vector3(13, -2, 0);
+        path[9] = new Vector3(15, -2, 0);
     }
     public void Move()
     {

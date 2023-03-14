@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PigMonsterFactory : MonoBehaviour
+public class PigMonsterFactory : MonsterFactory
 {
     // Prefab cua monster
     public GameObject monsterPrefab;
@@ -11,7 +11,7 @@ public class PigMonsterFactory : MonoBehaviour
     public float health = 100;
     public float speed = 5;
 
-    public IMonster CreateMonster(Vector3 startPosition)
+    public override IMonster CreateMonster(Vector3 startPosition)
     {
         // Tao mot doi tuonng monster tu prefab
         GameObject monsterObject = Instantiate(monsterPrefab, startPosition, Quaternion.identity);
