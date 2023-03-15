@@ -21,7 +21,8 @@ public abstract class Monster : MonoBehaviour, IMonster
     {
         healthBar = GetComponentInChildren<HealthBarHandler>().FillAmountImage;
         currentHealth = health;
-        this.transform.DOScaleX(1,0);
+        //this.transform.DOScaleX(1,0);
+        this.GetComponent<SpriteRenderer>().transform.DOScaleX(1, 0);
         path[0] = new Vector3(-16, 5, 0);
         path[1] = new Vector3(-10, 5, 0);
         path[2] = new Vector3(-10, -3, 0);
@@ -40,7 +41,8 @@ public abstract class Monster : MonoBehaviour, IMonster
         this.transform
             .DOPath(path, 15, PathType.Linear)
             .OnWaypointChange(MyWaypointChangeHandler)
-            .OnComplete(reachTarget);
+            //.OnComplete(reachTarget);
+            .Loops();
     }
 
     // take dmg -> -hp, run animation -> die
@@ -66,12 +68,14 @@ public abstract class Monster : MonoBehaviour, IMonster
             if (direction.x > 0)
             {
                 Debug.Log("turn left");
-                this.transform.DOScaleX(1, 0);
+                //this.transform.DOScaleX(1, 0);
+                this.GetComponentInChildren<Animator>().transform.DOScaleX(1, 0);
             }
             else 
             {
                 Debug.Log("turn right");
-                this.transform.DOScaleX(-1, 0);
+                //this.transform.DOScaleX(-1, 0);
+                this.GetComponentInChildren<Animator>().transform.DOScaleX(-1, 0);
             }
         }
     }
@@ -95,7 +99,7 @@ public abstract class Monster : MonoBehaviour, IMonster
 
     private void hitAnimation()
     {
-        GetComponent<HandleAnimation>().monsterHitted();
+        GetComponentInChildren<HandleAnimation>().monsterHitted();
     }
 
     private void healthBarGetDamge() 

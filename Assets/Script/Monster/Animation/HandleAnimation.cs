@@ -10,22 +10,11 @@ public class HandleAnimation : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        animator.SetBool("isHit", false);
-    }
-
-    private void Update()
-    {
-        Debug.Log(animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
-        // ket thuc animation
-        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1.0f)
-        {
-            animator.SetBool("isHit", false);
-        }
     }
     public void monsterHitted() 
     {
         // start animation
-        animator.SetBool("isHit", true);
+        animator.SetTrigger("startHit");
     }
 
 

@@ -17,6 +17,8 @@ public class MonsterManager : MonoBehaviour
         // tao monster = monster factory
         monster = (Monster)factory.CreateMonster(startPosition);
 
+        //MonsterSpawner.Instance.Spawn(MonsterSpawner.monsterName,startPosition,Quaternion.identity);
+
         // di chuyen monster den dich
         monster.Move();
 
@@ -30,6 +32,8 @@ public class MonsterManager : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
+        {
             monster.TakeDamage(5f);
+        }
     }
 }

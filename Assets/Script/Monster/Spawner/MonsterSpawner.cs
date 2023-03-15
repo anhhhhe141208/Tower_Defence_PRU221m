@@ -7,7 +7,7 @@ public class MonsterSpawner : Spawner
     private static MonsterSpawner instance;
     public static MonsterSpawner Instance { get => instance; }
 
-    public static string Enemy = "Enemy";
+    public static string monsterName = "";
 
     protected override void Awake()
     {
