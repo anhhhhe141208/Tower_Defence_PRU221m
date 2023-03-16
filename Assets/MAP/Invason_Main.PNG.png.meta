@@ -1,0 +1,2982 @@
+fileFormatVersion: 2
+guid: 6bfae89ea725af04b93333aeaf20ce74
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 36
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Invason_Main.PNG_0
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d77e5fb557eb54fbf0939e172d03c5
+      internalID: -2055106276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110e5e6b972c93f45a2050e1fa16e866
+      internalID: -13354606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e0acaa0a0eb414fa4d8c580011dfa8
+      internalID: -1658029030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a8a0f2ac5d11941930d00fdca594ee
+      internalID: 887145480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_4
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5717167feff464f80335484b05fdc7
+      internalID: 812724977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d29e016c853b44286965ce647f145e
+      internalID: 1694430565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_6
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cea42ac727a6f439433e8786c4c267
+      internalID: -1272655208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_7
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770e6a2cd05bcc246a4b0b6ed8f691af
+      internalID: 291713733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_8
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8070c374dfc42df499dc5f440f7deda7
+      internalID: -1078090216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_9
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c562ac77dc1143546af31c18fde57941
+      internalID: -1332018160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_10
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f21ac95daa4d9449acdf69725bb6131
+      internalID: 1909561335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_11
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01671d0b05205f7428ecdb387d8ebbd8
+      internalID: -411508787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_12
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 348
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0efabc5e0b55a24438e02ea7572e74f7
+      internalID: 1492365826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14d1ec0098e84149900b8337a317586
+      internalID: 366171200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd7432616e57e54f83fd7eadbadf79e
+      internalID: 1180437046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_15
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f199f51c514ac041ab3ecf041df1559
+      internalID: 1789316299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_16
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f8fb3361686dc4e9656c16c954c4ed
+      internalID: -104562363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_17
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12395932dcf52d241879c2dbf67ce5ed
+      internalID: -1076249470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_18
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8eb75da28d7fe468a96f08035ada0c
+      internalID: -1835613822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_19
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505cc826d1dccbe4395eac1d7fa10119
+      internalID: 923641284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_20
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001daa74577d0204ebab0dedd3b76654
+      internalID: -825896642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_21
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbdaac14aa26449408d35f43cf4692c5
+      internalID: 7534442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_22
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c011f0e12583c7644bf0ca3d15cee719
+      internalID: 578904459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_23
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ade9df39c6a5d241943f53f52d4c67e
+      internalID: -488626628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_24
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b3b8ba9b7d5c64aa540ce62e48e763
+      internalID: 398043703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_25
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 312
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be35916f8fbef264c84d2ebe3f0bf01d
+      internalID: -1616732152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_26
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90325a60bcfb5df43b198ada26197c74
+      internalID: -932234125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_27
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37796cf0c09713c4cabf06fd7ec6d7c8
+      internalID: -1273164944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_28
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcfedee66d02184ba221413662d2691
+      internalID: 216486616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_29
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e570edb4afb62f4b89c14f48b498e7d
+      internalID: -1213144034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_30
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb7aabea12769042b5b5e83195c3877
+      internalID: 965152959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe7ea184004a2c45b1eda87d05c1c60
+      internalID: 339870417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_32
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c75ec9220c863e46bdf4c892afe3293
+      internalID: 219572052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_33
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be41b8df4066ff418b0049ee34e8ac4
+      internalID: -351626724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_34
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27dee6cc96d8a464585d9537e341c922
+      internalID: 39404388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_35
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64003ead19c929c46b8c86b9f2da8a3e
+      internalID: -1387148161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_36
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abcef7aa953f9d49aa71833137035ee
+      internalID: 1940943809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_37
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b96461889b32e446990299dd1611009
+      internalID: -1222795296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_38
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 276
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f351542a3aa53074590fb19f2b1dae7d
+      internalID: 808659614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_39
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4102195222f1e3e47abbb6406acecafb
+      internalID: -1833531364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_40
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e9e94ef3049eb4cbfc7aa92c6d488a
+      internalID: -251958474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_41
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5587eea1782acb1468934b2ee859ac3a
+      internalID: -199599556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_42
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa3359f5c99cc147a5055db70ebe9f4
+      internalID: -1486132885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_43
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ba615ade2fed04f8c21af806a37818
+      internalID: -298832488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_44
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9b07ab4525d7b4baa04787fd134474
+      internalID: -1489172213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_45
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02396cb9922bec947ab604b80a9eb604
+      internalID: -1168091284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_46
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45baef40a0ecba24b8793cd4ef5f9de5
+      internalID: -1025890184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_47
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ca7e3d565c4a04cbfcba7fee8f2097
+      internalID: 958403527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_48
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ddd66e5f7dd9c42a729db8d150c735
+      internalID: 222704659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_49
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbd7f194a92fec43998d1df3000b575
+      internalID: -405808812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_50
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e65a733a47a7645b5080cc563ba42f
+      internalID: 449827854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_51
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f237385a0380c4182a8c0c99d8071f
+      internalID: -526099232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_52
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7171c18a33954e4ba867f48b9fefe5d
+      internalID: 567376960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_53
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e08da2287e30247afa2d14632f8ba1
+      internalID: 686119592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_54
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd05ee5b90d569344bc4e393c44232ea
+      internalID: -1185110243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_55
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06dc590891e4c0f468b9e46dbb5e7860
+      internalID: -366021764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_56
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d3722acac97214eb6c39277784af08
+      internalID: 1686623548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_57
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b731a82eacdc58b41907461bc3c8689d
+      internalID: 2133555292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_58
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8900a070a057843924ae0cf7a56b84
+      internalID: -1670698720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_59
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de195918ab4e1e4a9333a5cf9427221
+      internalID: 1827488816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_60
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c37dff478b2344e938a838f77ca8b8
+      internalID: -443443471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_61
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96a26fe13d266d4ba6a5df643b614dc
+      internalID: 1563922260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_62
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfd06092dd5fe24daf384b532cff02f
+      internalID: -270232710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_63
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00002d0d985b35040bf97fe209337667
+      internalID: -541478895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_64
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 204
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce264ac48e9bb44786a2a20a37236c4
+      internalID: -1037823466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_65
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b12eb73b00848469fa0413767a152c
+      internalID: 1965461153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_66
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9650bc9686d6ca54cbf4ea04e81f4240
+      internalID: 2072081007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_67
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d6e06438a93204680b05a90da36c01
+      internalID: 1070075240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_68
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ca5d37fca2a214c8ab8aa1cabccfb9
+      internalID: -910217259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_69
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d206f3d5a69b543a464b568a62aa05
+      internalID: -1822788821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_70
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8325c7515fb95ab4ab44b09ce6273504
+      internalID: 741859385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_71
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785b6855bc984854e84200e7e4045a56
+      internalID: -967321080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_72
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5162a13735e1243bd7fa8bf79c7654
+      internalID: 1288994996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_73
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96991442e2fa6de45bcb0df99ec58968
+      internalID: 786624491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_74
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28a5edd6a4fb894fb3d95f79976a4aa
+      internalID: 727821429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_75
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1aeb8a055aedf42b0c74e9fedb6766
+      internalID: -1361092464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_76
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26b4b8fc76848d40aeec0d25fa0a6c7
+      internalID: 2102795631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_77
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 168
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb028b53160ca34d89cb744aba1e3c5
+      internalID: 1984865013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_78
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ca082fb23cd37479087fd09c62bf2c
+      internalID: 2079602985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_79
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430efadaf04c5244c941b3a42d609c85
+      internalID: 121781317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_80
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36605ebdec8b6344b7da236ee90e9a7
+      internalID: 408197630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_81
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c449de7e66f82489f770a5b816ee82
+      internalID: -1790315146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_82
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0e4cad083e74a4d81ff2383cf90306
+      internalID: 2024902963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_83
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e121b13530d7cc842b8bc6d207d5ecfc
+      internalID: 835501735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_84
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4e7ef3096764149acb08978d44da93
+      internalID: 328167331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_85
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2daacfe27859345b7a40ff1c5af034
+      internalID: -770999401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_86
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4259656f9e4b039438444afd61702857
+      internalID: 987019588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_87
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac026f7740187846a41037feadc9575
+      internalID: -919918714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_88
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b9884f00a88464cba8689ee2ad74ea
+      internalID: 464945088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_89
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0c87ef807413e40bcf6d7387355551
+      internalID: 1283112873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_90
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 132
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8d678dbb1e6224da8b4c65d13246bf
+      internalID: 1773067086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_91
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c779debd7191a4d8ba928b3003f622
+      internalID: 1612029002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_92
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077194778c13a474cb3e088854aaf93e
+      internalID: -471478255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_93
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef8887df0cc2234798cc54f0eb55385
+      internalID: 1713710794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_94
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65814bddddb28f409f70bdc215a536c
+      internalID: 1106967382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_95
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c462ef1cd64815a4f92a46499768378d
+      internalID: -407337213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_96
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da34b81d97aa15449f16333bfcbacbf
+      internalID: -1399490776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_97
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adac32ba994fbce4a88892a77ef2a0f1
+      internalID: 1338873126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_98
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380460f51e7e7a2468a48bc8d06cdba7
+      internalID: -1958169115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_99
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274265afc923bc442af8bdb612cea96a
+      internalID: 1556451053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_100
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f797b56abc0c1345bbda80c96f3e79f
+      internalID: 1495483434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_101
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0774ffeddb7a7849bf7c7a5459c838f
+      internalID: 127344743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_102
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2b5133cc76ce24e8dd54144948ba42
+      internalID: -922552802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_103
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 96
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad88a16f91c88248990bc78fbcd8769
+      internalID: 1745261164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_104
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492f2dad0e5fa5d409280f06b6122d6c
+      internalID: 80318175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_105
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb8a077c76726c4ba0926a1a7d9377e
+      internalID: -1596301170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_106
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fb640e9deed224aba298f0b6f237a3
+      internalID: -293001351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_107
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b7c1aca97bab449bd9d5d3c8c5adc0
+      internalID: -1409055487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_108
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50a264a6ffd4c4418f0503a24813b5a
+      internalID: 160075603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_109
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e267b16ccf367148beda7f35d87080c
+      internalID: -2638396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_110
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8143060ff115b54886a17d2f39086e9
+      internalID: -1310034037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_111
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10253fe4b9e09d642990ad52a2bb16a7
+      internalID: 1554341942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_112
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ecf6d59e3104d43a106447700d55a6
+      internalID: 1657580415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_113
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b005aae3eca519b468449e5de3ea6e22
+      internalID: 1780006641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_114
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b15c2ccbc623e44939506bb72c5b01
+      internalID: 974240435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_115
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898950a4e5b5c074c8a574e9c9f396e2
+      internalID: -1145070298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_116
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 60
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2d95d080f65264fac24f31f34a2b7e
+      internalID: 545176501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_117
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b233561926e8d4c49b48768e5eb547fa
+      internalID: -1674517515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_118
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c47d7969fb66146b9334a63f2eeff7
+      internalID: 346211438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_119
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4696d78c766c6bb458b2cca374fe29fd
+      internalID: 1177947117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_120
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6214565837faae43a893dec1fdd5b48
+      internalID: 674920674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_121
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2526c5d8ada5bf04a8694a46dd6037e2
+      internalID: 1309394116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_122
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d712f9bbdcdefdf4ba5a22a4007a29f9
+      internalID: 1145966729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_123
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0e55b1f15429d4882ea0bedb82a519
+      internalID: -210123639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_124
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3278da0f037636d499e7f4345dc5c2a2
+      internalID: -892379359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_125
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2e6a76bf940b843be1a70f3b9c7851
+      internalID: 620975750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_126
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7294a938cb5a74d4cb7fe8c661b1df60
+      internalID: -1340128422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_127
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44ad1a3c3a655947a217017b54152f7
+      internalID: -1296746540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_128
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b77fcaf4f86b644085bf5d1a3c9d377
+      internalID: 1626160765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Invason_Main.PNG_129
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 24
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f5d65968acfb24393854b05d602a81
+      internalID: 1224391310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Invason_Main.PNG_37: -1222795296
+      Invason_Main.PNG_7: 291713733
+      Invason_Main.PNG_43: -298832488
+      Invason_Main.PNG_106: -293001351
+      Invason_Main.PNG_66: 2072081007
+      Invason_Main.PNG_108: 160075603
+      Invason_Main.PNG_117: -1674517515
+      Invason_Main.PNG_125: 620975750
+      Invason_Main.PNG_67: 1070075240
+      Invason_Main.PNG_41: -199599556
+      Invason_Main.PNG_27: -1273164944
+      Invason_Main.PNG_83: 835501735
+      Invason_Main.PNG_92: -471478255
+      Invason_Main.PNG_65: 1965461153
+      Invason_Main.PNG_46: -1025890184
+      Invason_Main.PNG_52: 567376960
+      Invason_Main.PNG_45: -1168091284
+      Invason_Main.PNG_11: -411508787
+      Invason_Main.PNG_87: -919918714
+      Invason_Main.PNG_94: 1106967382
+      Invason_Main.PNG_38: 808659614
+      Invason_Main.PNG_109: -2638396
+      Invason_Main.PNG_10: 1909561335
+      Invason_Main.PNG_111: 1554341942
+      Invason_Main.PNG_53: 686119592
+      Invason_Main.PNG_3: 887145480
+      Invason_Main.PNG_113: 1780006641
+      Invason_Main.PNG_54: -1185110243
+      Invason_Main.PNG_13: 366171200
+      Invason_Main.PNG_47: 958403527
+      Invason_Main.PNG_97: 1338873126
+      Invason_Main.PNG_21: 7534442
+      Invason_Main.PNG_60: -443443471
+      Invason_Main.PNG_24: 398043703
+      Invason_Main.PNG_33: -351626724
+      Invason_Main.PNG_99: 1556451053
+      Invason_Main.PNG_50: 449827854
+      Invason_Main.PNG_95: -407337213
+      Invason_Main.PNG_101: 127344743
+      Invason_Main.PNG_42: -1486132885
+      Invason_Main.PNG_72: 1288994996
+      Invason_Main.PNG_36: 1940943809
+      Invason_Main.PNG_77: 1984865013
+      Invason_Main.PNG_63: -541478895
+      Invason_Main.PNG_129: 1224391310
+      Invason_Main.PNG_26: -932234125
+      Invason_Main.PNG_28: 216486616
+      Invason_Main.PNG_22: 578904459
+      Invason_Main.PNG_118: 346211438
+      Invason_Main.PNG_73: 786624491
+      Invason_Main.PNG_35: -1387148161
+      Invason_Main.PNG_85: -770999401
+      Invason_Main.PNG_114: 974240435
+      Invason_Main.PNG_96: -1399490776
+      Invason_Main.PNG_57: 2133555292
+      Invason_Main.PNG_69: -1822788821
+      Invason_Main.PNG_84: 328167331
+      Invason_Main.PNG_86: 987019588
+      Invason_Main.PNG_121: 1309394116
+      Invason_Main.PNG_105: -1596301170
+      Invason_Main.PNG_127: -1296746540
+      Invason_Main.PNG_59: 1827488816
+      Invason_Main.PNG_120: 674920674
+      Invason_Main.PNG_128: 1626160765
+      Invason_Main.PNG_9: -1332018160
+      Invason_Main.PNG_15: 1789316299
+      Invason_Main.PNG_51: -526099232
+      Invason_Main.PNG_19: 923641284
+      Invason_Main.PNG_90: 1773067086
+      Invason_Main.PNG_115: -1145070298
+      Invason_Main.PNG_2: -1658029030
+      Invason_Main.PNG_93: 1713710794
+      Invason_Main.PNG_18: -1835613822
+      Invason_Main.PNG_0: -2055106276
+      Invason_Main.PNG_88: 464945088
+      Invason_Main.PNG_70: 741859385
+      Invason_Main.PNG_98: -1958169115
+      Invason_Main.PNG_12: 1492365826
+      Invason_Main.PNG_30: 965152959
+      Invason_Main.PNG_23: -488626628
+      Invason_Main.PNG_20: -825896642
+      Invason_Main.PNG_75: -1361092464
+      Invason_Main.PNG_25: -1616732152
+      Invason_Main.PNG_79: 121781317
+      Invason_Main.PNG_64: -1037823466
+      Invason_Main.PNG_68: -910217259
+      Invason_Main.PNG_103: 1745261164
+      Invason_Main.PNG_126: -1340128422
+      Invason_Main.PNG_102: -922552802
+      Invason_Main.PNG_112: 1657580415
+      Invason_Main.PNG_116: 545176501
+      Invason_Main.PNG_6: -1272655208
+      Invason_Main.PNG_49: -405808812
+      Invason_Main.PNG_71: -967321080
+      Invason_Main.PNG_76: 2102795631
+      Invason_Main.PNG_74: 727821429
+      Invason_Main.PNG_29: -1213144034
+      Invason_Main.PNG_81: -1790315146
+      Invason_Main.PNG_82: 2024902963
+      Invason_Main.PNG_104: 80318175
+      Invason_Main.PNG_61: 1563922260
+      Invason_Main.PNG_89: 1283112873
+      Invason_Main.PNG_100: 1495483434
+      Invason_Main.PNG_78: 2079602985
+      Invason_Main.PNG_32: 219572052
+      Invason_Main.PNG_119: 1177947117
+      Invason_Main.PNG_39: -1833531364
+      Invason_Main.PNG_40: -251958474
+      Invason_Main.PNG_58: -1670698720
+      Invason_Main.PNG_4: 812724977
+      Invason_Main.PNG_44: -1489172213
+      Invason_Main.PNG_91: 1612029002
+      Invason_Main.PNG_55: -366021764
+      Invason_Main.PNG_62: -270232710
+      Invason_Main.PNG_110: -1310034037
+      Invason_Main.PNG_122: 1145966729
+      Invason_Main.PNG_14: 1180437046
+      Invason_Main.PNG_1: -13354606
+      Invason_Main.PNG_107: -1409055487
+      Invason_Main.PNG_48: 222704659
+      Invason_Main.PNG_8: -1078090216
+      Invason_Main.PNG_80: 408197630
+      Invason_Main.PNG_124: -892379359
+      Invason_Main.PNG_56: 1686623548
+      Invason_Main.PNG_31: 339870417
+      Invason_Main.PNG_17: -1076249470
+      Invason_Main.PNG_16: -104562363
+      Invason_Main.PNG_34: 39404388
+      Invason_Main.PNG_123: -210123639
+      Invason_Main.PNG_5: 1694430565
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
