@@ -22,14 +22,12 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
 
     private void Start()
     {
-        Debug.Log("start");
         MonsterSubject.Instance.Attach(this);
         // set health bar
         healthBar = GetComponentInChildren<HealthBarHandler>().FillAmountImage;
         currentHealth = health;
         // flip sprite to right
         this.GetComponent<SpriteRenderer>().transform.DOScaleX(1, 0);
-        Debug.Log("start end");
     }
 
     private void Awake()
@@ -68,7 +66,8 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
         healthBarGetDamge();
         if (currentHealth <= 0)
         {
-            Die();
+            //Die();
+            MonsterSubject.Instance.NotifyOnMonsterKilled(this);
         }
     }
     // doing
@@ -90,10 +89,27 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
             }
         }
     }
-    // xu li khi monster bi tieu diet
+
+    // hanh vi dac biet cua tung loai monster
+    public abstract void SpecialAbility();
+
+    public void OnMonsterDamaged(Monster monster, int damage)
+    {
+        TakeDamage(damage);
+    }
+
+    public void OnMonsterKilled(Monster monster)
+    {
+        Die();
+    }
+
+    public void OnMonsterReachedEnd(Monster monster)
+    {
+        reachTarget();
+    }
+
     public void Die()
     {
-        //temp
         //To Do: cong tien` cho nguoi choi
         Manager.Instance.AddMoney(killReward);
         MonsterSubject.Instance.Detach(this);
@@ -103,8 +119,9 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
         //To Do: remove khoi Monster Object Pool 
     }
 
+
     // xu li khi monster den dich
-    public void reachTarget() 
+    public void reachTarget()
     {
         //temp
         Manager.Instance.SubtractLife(1);
@@ -118,31 +135,13 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
 
     private void hitAnimation()
     {
-            GetComponentInChildren<HandleAnimation>().monsterHitted();
+        GetComponentInChildren<HandleAnimation>().monsterHitted();
     }
 
-    private void healthBarGetDamge() 
+    private void healthBarGetDamge()
     {
         healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount,
             currentHealth / health,
             10f);
-    }
-
-    // hanh vi dac biet cua tung loai monster
-    public abstract void SpecialAbility();
-
-    public void OnMonsterDamaged(Monster monster, int damage)
-    {
-        TakeDamage(damage);
-    }
-
-    public void OnMonsterKilled(Monster monster)
-    {
-        // do nothing
-    }
-
-    public void OnMonsterReachedEnd(Monster monster)
-    {
-        // do nothing
     }
 }

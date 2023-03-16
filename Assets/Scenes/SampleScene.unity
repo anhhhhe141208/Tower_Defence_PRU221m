@@ -365,6 +365,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   factory: {fileID: 196668827}
   startPosition: {x: -16, y: 5, z: 0}
+  monsterFactories:
+  - {fileID: 1292815054}
+  - {fileID: 196668827}
+  - {fileID: 1293021337}
+  spawnPoints:
+  - {fileID: 632210914}
 --- !u!1 &632210913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,4 +1252,3 @@ MonoBehaviour:
   - {fileID: 1293021337}
   spawnPoints:
   - {fileID: 2061292054}
-  endPoint: {fileID: 0}

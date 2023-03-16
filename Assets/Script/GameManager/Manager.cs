@@ -36,7 +36,6 @@ public class Manager : MonoBehaviour
         currentMoney = startingMoney;
         UpdateLivesText();
         UpdateMoneyText();
-        SpawnMonster();
     }
 
     public void SubtractLife(int amount)
@@ -75,19 +74,6 @@ public class Manager : MonoBehaviour
     {
         // Game over logic
     }
-    //----------------------------------------
-    public MonsterFactory[] monsterFactories;
-    public Transform[] spawnPoints;
-    public Transform endPoint;
-
-    private void SpawnMonster()
-    {
-        MonsterFactory factory = monsterFactories[Random.Range(0, monsterFactories.Length)];
-        Transform spawnPoint = spawnPoints[0];
-
-        factory.CreateMonster(spawnPoint.position);
-
-        //_currentSpawnPoint = (_currentSpawnPoint + 1) % spawnPoints.Length;
-    }
+    
 
 }
