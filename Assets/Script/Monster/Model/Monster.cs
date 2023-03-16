@@ -53,20 +53,19 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
         this.transform
             .DOPath(path, 15, PathType.Linear)
             .OnWaypointChange(MyWaypointChangeHandler)
-            .OnComplete(reachTarget);
-
+            .OnComplete(() => {
+                MonsterSubject.Instance.NotifyOnMonsterReachedEnd(this);
+            });
     }
 
     // take dmg -> -hp, run animation -> die
     public void TakeDamage(int damage)
     {
-        Debug.Log(currentHealth);
         currentHealth -= damage;
         hitAnimation();
         healthBarGetDamge();
         if (currentHealth <= 0)
         {
-            //Die();
             MonsterSubject.Instance.NotifyOnMonsterKilled(this);
         }
     }
@@ -110,26 +109,17 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
 
     public void Die()
     {
-        //To Do: cong tien` cho nguoi choi
-        Manager.Instance.AddMoney(killReward);
         MonsterSubject.Instance.Detach(this);
         // temp
         Destroy(this.gameObject);
-
         //To Do: remove khoi Monster Object Pool 
     }
 
-
-    // xu li khi monster den dich
     public void reachTarget()
     {
-        //temp
-        Manager.Instance.SubtractLife(1);
         MonsterSubject.Instance.Detach(this);
         // temp
-        Destroy(gameObject);
-
-        // To Do : tru` so mang cua nguoi choi
+        Destroy(this.gameObject);
         //To Do: remove khoi Monster Object Pool 
     }
 

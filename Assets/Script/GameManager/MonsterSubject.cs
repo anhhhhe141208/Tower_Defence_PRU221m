@@ -18,7 +18,7 @@ public class MonsterSubject
             return instance;
         }
     }
-    private List<IObserver> _observers = new List<IObserver>();
+    public List<IObserver> _observers = new List<IObserver>();
 
     public void Attach(IObserver observer)
     {

@@ -4,16 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Manager : MonoBehaviour
+public class PlayerManager : MonoBehaviour, IObserver
 {
-    private static Manager instance;
-    public static Manager Instance
+    private static PlayerManager instance;
+    public static PlayerManager Instance
     {
         get
         {
             if (instance == null)
             {
-                instance = FindObjectOfType<Manager>();
+                instance = FindObjectOfType<PlayerManager>();
             }
             return instance;
         }
@@ -32,10 +32,26 @@ public class Manager : MonoBehaviour
 
     private void Start()
     {
+        MonsterSubject.Instance.Attach(this);
         currentLives = startingLives;
         currentMoney = startingMoney;
         UpdateLivesText();
         UpdateMoneyText();
+    }
+
+    public void OnMonsterDamaged(Monster monster, int damage)
+    {
+        // do nothing
+    }
+
+    public void OnMonsterKilled(Monster monster)
+    {
+        AddMoney(monster.killReward);
+    }
+
+    public void OnMonsterReachedEnd(Monster monster)
+    {
+        SubtractLife(1);
     }
 
     public void SubtractLife(int amount)
@@ -74,6 +90,6 @@ public class Manager : MonoBehaviour
     {
         // Game over logic
     }
-    
 
+    
 }
