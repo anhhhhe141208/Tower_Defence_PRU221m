@@ -15,8 +15,8 @@ public class PigMonsterFactory : MonsterFactory
     public override IMonster CreateMonster(Vector3 startPosition)
     {
         // Tao mot doi tuonng monster tu prefab
-        GameObject monsterObject = Instantiate(monsterPrefab, startPosition, Quaternion.identity);
-
+        GameObject monsterObject = Instantiate(monsterPrefab);
+        monsterObject.transform.position = startPosition;
         // thiet lap thong so cho loai monster nay
         var pigMonster = monsterObject.GetComponent<Pig>();
         pigMonster.health = health;

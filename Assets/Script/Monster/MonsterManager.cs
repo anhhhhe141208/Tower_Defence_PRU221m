@@ -13,28 +13,27 @@ public class MonsterManager : MonoBehaviour
     Monster monster;
     void Start()
     {
-        Debug.Log(factory);
         // tao monster = monster factory
-        monster = (Monster)factory.CreateMonster(startPosition);
-
-        //MonsterSpawner.Instance.Spawn(MonsterSpawner.monsterName,startPosition,Quaternion.identity);
-
-        // di chuyen monster den dich
-        //monster.Move();
+        //monster = (Monster)factory.CreateMonster(startPosition);
 
         // goi hanh vi dac biet cua monster
-        monster.SpecialAbility();
-
-        
+        //monster.SpecialAbility();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+        //Debug.Log(MonsterSubject.Instance._observers.Count);
         if (Input.GetMouseButtonDown(0))
         {
-            if (monster == null) monster = (Monster)factory.CreateMonster(startPosition);
-            monster.TakeDamage(5f);
+            //monster.TakeDamage(5);
+            MonsterSubject.Instance.NotifyOnMonsterDamaged(monster, 5);
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            monster = (Monster)factory.CreateMonster(startPosition);
         }
     }
 }

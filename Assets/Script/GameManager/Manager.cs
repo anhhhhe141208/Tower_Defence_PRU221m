@@ -25,7 +25,10 @@ public class Manager : MonoBehaviour
     public Text moneyText;
 
     private int currentLives;
+    public int CurrentLives { get => currentLives;}
+
     private int currentMoney;
+    public int CurrentMoney { get => currentMoney;}
 
     private void Start()
     {
@@ -77,13 +80,10 @@ public class Manager : MonoBehaviour
     public Transform[] spawnPoints;
     public Transform endPoint;
 
-    private int _currentSpawnPoint = 0;
-
-
     private void SpawnMonster()
     {
         MonsterFactory factory = monsterFactories[Random.Range(0, monsterFactories.Length)];
-        Transform spawnPoint = spawnPoints[_currentSpawnPoint];
+        Transform spawnPoint = spawnPoints[0];
 
         factory.CreateMonster(spawnPoint.position);
 

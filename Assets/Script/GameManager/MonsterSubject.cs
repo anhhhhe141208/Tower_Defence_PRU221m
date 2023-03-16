@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 public class MonsterSubject
 {
+    
     private static MonsterSubject instance;
     public static MonsterSubject Instance
     {

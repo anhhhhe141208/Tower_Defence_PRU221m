@@ -2,10 +2,12 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class Monster : MonoBehaviour, IMonster
+public abstract class Monster : MonoBehaviour, IMonster, IObserver
 {
     // Các thông so cua monster
     public float health;
@@ -13,18 +15,25 @@ public abstract class Monster : MonoBehaviour, IMonster
     public int killReward;
     private Vector3[] path = new Vector3[10];
 
-    private float currentHealth;
+    public float currentHealth;
     private Image healthBar;
     private Tween tween;
     // Các behavior chung cua monster
 
-    private void Awake()
+    private void Start()
     {
+        Debug.Log("start");
+        MonsterSubject.Instance.Attach(this);
         // set health bar
         healthBar = GetComponentInChildren<HealthBarHandler>().FillAmountImage;
         currentHealth = health;
         // flip sprite to right
         this.GetComponent<SpriteRenderer>().transform.DOScaleX(1, 0);
+        Debug.Log("start end");
+    }
+
+    private void Awake()
+    {
         // set path
         path[0] = new Vector3(-16, 5, 0);
         path[1] = new Vector3(-10, 5, 0);
@@ -51,11 +60,11 @@ public abstract class Monster : MonoBehaviour, IMonster
     }
 
     // take dmg -> -hp, run animation -> die
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
+        Debug.Log(currentHealth);
         currentHealth -= damage;
         hitAnimation();
-        Debug.Log(currentHealth + "-" + health);
         healthBarGetDamge();
         if (currentHealth <= 0)
         {
@@ -72,12 +81,12 @@ public abstract class Monster : MonoBehaviour, IMonster
             if (direction.x > 0)
             {
                 //Debug.Log("turn left");
-                this.GetComponentInChildren<Animator>().transform.DOScaleX(1, 0);
+                this.GetComponent<Animator>().transform.DOScaleX(1, 0);
             }
             else 
             {
                 //Debug.Log("turn right");
-                this.GetComponentInChildren<Animator>().transform.DOScaleX(-1, 0);
+                this.GetComponent<Animator>().transform.DOScaleX(-1, 0);
             }
         }
     }
@@ -87,7 +96,9 @@ public abstract class Monster : MonoBehaviour, IMonster
         //temp
         //To Do: cong tien` cho nguoi choi
         Manager.Instance.AddMoney(killReward);
-        Destroy(gameObject);
+        MonsterSubject.Instance.Detach(this);
+        // temp
+        Destroy(this.gameObject);
 
         //To Do: remove khoi Monster Object Pool 
     }
@@ -97,6 +108,8 @@ public abstract class Monster : MonoBehaviour, IMonster
     {
         //temp
         Manager.Instance.SubtractLife(1);
+        MonsterSubject.Instance.Detach(this);
+        // temp
         Destroy(gameObject);
 
         // To Do : tru` so mang cua nguoi choi
@@ -105,7 +118,7 @@ public abstract class Monster : MonoBehaviour, IMonster
 
     private void hitAnimation()
     {
-        GetComponentInChildren<HandleAnimation>().monsterHitted();
+            GetComponentInChildren<HandleAnimation>().monsterHitted();
     }
 
     private void healthBarGetDamge() 
@@ -118,5 +131,18 @@ public abstract class Monster : MonoBehaviour, IMonster
     // hanh vi dac biet cua tung loai monster
     public abstract void SpecialAbility();
 
-    
+    public void OnMonsterDamaged(Monster monster, int damage)
+    {
+        TakeDamage(damage);
+    }
+
+    public void OnMonsterKilled(Monster monster)
+    {
+        // do nothing
+    }
+
+    public void OnMonsterReachedEnd(Monster monster)
+    {
+        // do nothing
+    }
 }

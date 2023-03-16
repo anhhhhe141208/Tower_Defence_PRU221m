@@ -6,7 +6,7 @@ public class MonsterObserver : MonoBehaviour, IObserver
 {
     public void OnMonsterDamaged(Monster monster, int damage)
     {
-        monster.TakeDamage(damage);
+        //monster.TakeDamage(damage);
     }
 
     public void OnMonsterKilled(Monster monster)

@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class PlayerObserver : MonoBehaviour,IObserver
 {
-    private int _health = 3;
-    private int _money = 0;
 
     public void OnMonsterDamaged(Monster monster, int damage)
     {
+        // do nothing
     }
 
     public void OnMonsterKilled(Monster monster)
     {
-        _money += monster.killReward;
+        Manager.Instance.AddMoney(monster.killReward);
         Debug.Log("Earned " + monster.killReward);
     }
 
     public void OnMonsterReachedEnd(Monster monster)
     {
-        _health--;
-        if (_health <= 0)
+        if (Manager.Instance.CurrentLives <= 0)
         {
             // Player loses the game
             Debug.Log("Game Over");
+            return;
         }
+        Manager.Instance.SubtractLife(1);
+        
     }
 }
