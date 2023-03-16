@@ -20,7 +20,7 @@ public class MonsterManager : MonoBehaviour
         //MonsterSpawner.Instance.Spawn(MonsterSpawner.monsterName,startPosition,Quaternion.identity);
 
         // di chuyen monster den dich
-        monster.Move();
+        //monster.Move();
 
         // goi hanh vi dac biet cua monster
         monster.SpecialAbility();
@@ -33,6 +33,7 @@ public class MonsterManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            if (monster == null) monster = (Monster)factory.CreateMonster(startPosition);
             monster.TakeDamage(5f);
         }
     }

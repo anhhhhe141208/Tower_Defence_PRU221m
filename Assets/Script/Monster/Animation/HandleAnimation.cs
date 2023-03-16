@@ -9,6 +9,9 @@ public class HandleAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    }
+    private void Awake()
+    {
         animator = GetComponent<Animator>();
     }
     public void monsterHitted() 

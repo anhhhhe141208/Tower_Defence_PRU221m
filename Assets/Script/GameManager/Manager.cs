@@ -33,6 +33,7 @@ public class Manager : MonoBehaviour
         currentMoney = startingMoney;
         UpdateLivesText();
         UpdateMoneyText();
+        SpawnMonster();
     }
 
     public void SubtractLife(int amount)

@@ -37,6 +37,7 @@ public abstract class Monster : MonoBehaviour, IMonster
         path[7] = new Vector3(13, 5, 0);
         path[8] = new Vector3(13, -2, 0);
         path[9] = new Vector3(15, -2, 0);
+        Move();
     }
 
     public void Move()
@@ -84,10 +85,9 @@ public abstract class Monster : MonoBehaviour, IMonster
     public void Die()
     {
         //temp
-        Destroy(gameObject);
-
         //To Do: cong tien` cho nguoi choi
-        // game manager . instance . add monney (kill reward);
+        Manager.Instance.AddMoney(killReward);
+        Destroy(gameObject);
 
         //To Do: remove khoi Monster Object Pool 
     }
@@ -96,6 +96,7 @@ public abstract class Monster : MonoBehaviour, IMonster
     public void reachTarget() 
     {
         //temp
+        Manager.Instance.SubtractLife(1);
         Destroy(gameObject);
 
         // To Do : tru` so mang cua nguoi choi

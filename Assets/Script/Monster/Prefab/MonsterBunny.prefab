@@ -209,19 +209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5298adb44df52604aac4d3ec19ae1c00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  speed: 0
-  path:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  health: 100
+  speed: 5
+  killReward: 1
 --- !u!1 &646763232504564454
 GameObject:
   m_ObjectHideFlags: 0
