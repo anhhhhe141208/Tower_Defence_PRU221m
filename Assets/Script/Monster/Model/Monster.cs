@@ -87,6 +87,8 @@ public abstract class Monster : MonoBehaviour, IMonster
         Destroy(gameObject);
 
         //To Do: cong tien` cho nguoi choi
+        // game manager . instance . add monney (kill reward);
+
         //To Do: remove khoi Monster Object Pool 
     }
 

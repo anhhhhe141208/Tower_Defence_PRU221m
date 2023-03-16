@@ -10,6 +10,7 @@ public class BunnyMonsterFactory : MonsterFactory
     // Các thông s? c?a monster
     public float health = 100;
     public float speed = 5;
+    public int killReward = 5;
 
     public override IMonster CreateMonster(Vector3 startPosition)
     {
@@ -20,6 +21,7 @@ public class BunnyMonsterFactory : MonsterFactory
         var bunnyMonster = monsterObject.GetComponent<Bunny>();
         bunnyMonster.health = health;
         bunnyMonster.speed = speed;
+        bunnyMonster.killReward = killReward;
 
         return bunnyMonster;
     }
