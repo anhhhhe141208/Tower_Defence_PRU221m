@@ -24,7 +24,7 @@ public class MonsterManager : MonoBehaviour
     void Update()
     {
         
-        Debug.Log(MonsterSubject.Instance._observers.Count);
+        //Debug.Log(MonsterSubject.Instance._observers.Count);
         if (Input.GetMouseButtonDown(0))
         {
             //monster.TakeDamage(5);
