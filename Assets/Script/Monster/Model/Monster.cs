@@ -10,19 +10,22 @@ public abstract class Monster : MonoBehaviour, IMonster
     // Các thông so cua monster
     public float health;
     public float speed;
-    public Vector3[] path = new Vector3[10];
+    public int killReward;
+    private Vector3[] path = new Vector3[10];
 
     private float currentHealth;
     private Image healthBar;
     private Tween tween;
     // Các behavior chung cua monster
 
-    private void Start()
+    private void Awake()
     {
+        // set health bar
         healthBar = GetComponentInChildren<HealthBarHandler>().FillAmountImage;
         currentHealth = health;
-        //this.transform.DOScaleX(1,0);
+        // flip sprite to right
         this.GetComponent<SpriteRenderer>().transform.DOScaleX(1, 0);
+        // set path
         path[0] = new Vector3(-16, 5, 0);
         path[1] = new Vector3(-10, 5, 0);
         path[2] = new Vector3(-10, -3, 0);
@@ -35,14 +38,15 @@ public abstract class Monster : MonoBehaviour, IMonster
         path[8] = new Vector3(13, -2, 0);
         path[9] = new Vector3(15, -2, 0);
     }
+
     public void Move()
     {
         // monster di chuyen den dich
         this.transform
             .DOPath(path, 15, PathType.Linear)
             .OnWaypointChange(MyWaypointChangeHandler)
-            //.OnComplete(reachTarget);
-            .Loops();
+            .OnComplete(reachTarget);
+
     }
 
     // take dmg -> -hp, run animation -> die
@@ -64,17 +68,14 @@ public abstract class Monster : MonoBehaviour, IMonster
         if (waypointIndex + 1 <= path.Length - 1)
         {
             var direction = (path[waypointIndex] - path[waypointIndex + 1]).normalized;
-            Debug.Log(direction);
             if (direction.x > 0)
             {
-                Debug.Log("turn left");
-                //this.transform.DOScaleX(1, 0);
+                //Debug.Log("turn left");
                 this.GetComponentInChildren<Animator>().transform.DOScaleX(1, 0);
             }
             else 
             {
-                Debug.Log("turn right");
-                //this.transform.DOScaleX(-1, 0);
+                //Debug.Log("turn right");
                 this.GetComponentInChildren<Animator>().transform.DOScaleX(-1, 0);
             }
         }
@@ -85,7 +86,8 @@ public abstract class Monster : MonoBehaviour, IMonster
         //temp
         Destroy(gameObject);
 
-        //To Do: add: + tien
+        //To Do: cong tien` cho nguoi choi
+        //To Do: remove khoi Monster Object Pool 
     }
 
     // xu li khi monster den dich
@@ -94,7 +96,8 @@ public abstract class Monster : MonoBehaviour, IMonster
         //temp
         Destroy(gameObject);
 
-        // To Do : - tim <3 
+        // To Do : tru` so mang cua nguoi choi
+        //To Do: remove khoi Monster Object Pool 
     }
 
     private void hitAnimation()
