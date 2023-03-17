@@ -16,6 +16,7 @@ public class PigMonsterFactory : MonoBehaviour
         // Tao mot doi tuonng monster tu prefab
         GameObject monsterObject = Instantiate(monsterPrefab, startPosition, Quaternion.identity);
 
+       
         // thiet lap thong so cho loai monster nay
         var pigMonster = monsterObject.GetComponent<Pig>();
         pigMonster.health = health;
