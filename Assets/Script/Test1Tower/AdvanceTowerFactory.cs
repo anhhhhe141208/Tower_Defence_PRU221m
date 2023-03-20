@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicTowerFactory : Tower
+public class AdvanceTowerFactory : Tower
 {
     // Start is called before the first frame update
     public Transform pivot;
@@ -29,7 +29,7 @@ public class BasicTowerFactory : Tower
 
             /*GameObject newBullet = Instantiate(bullet, barrel.position, pivot.rotation);*/
             GameObject bullet = ObjectPool.instance.GetGameObject();
-            
+
             if (bullet != null)
             {
                 bullet.transform.position = barrel.transform.position;
@@ -42,8 +42,6 @@ public class BasicTowerFactory : Tower
     private void Start()
     {
         /*createTower();*/
-        
-    }
 
-    
+    }
 }

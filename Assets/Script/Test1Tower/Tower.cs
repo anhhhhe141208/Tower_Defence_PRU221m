@@ -11,6 +11,8 @@ public abstract class Tower : MonoBehaviour
     public GameObject currentTarget;
 
     public abstract void shoot();
+    public abstract void createTower();
+
 
     void Start()
     {
@@ -45,6 +47,7 @@ public abstract class Tower : MonoBehaviour
             currentTarget = null;
         }
     }
+    
 
     void Update()
     {
