@@ -6,6 +6,6 @@ public interface IMonster
 {
         void Move();
         void SpecialAbility();
-        void TakeDamage(float damage);
+        void TakeDamage(int damage);
         void Die();
 }

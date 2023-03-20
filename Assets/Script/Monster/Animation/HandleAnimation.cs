@@ -9,23 +9,15 @@ public class HandleAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
-        animator.SetBool("isHit", false);
     }
-
-    private void Update()
+    private void Awake()
     {
-        Debug.Log(animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
-        // ket thuc animation
-        if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime <= 1.0f)
-        {
-            animator.SetBool("isHit", false);
-        }
+        animator = GetComponent<Animator>();
     }
     public void monsterHitted() 
     {
         // start animation
-        animator.SetBool("isHit", true);
+        animator.SetTrigger("startHit");
     }
 
 
