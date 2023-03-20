@@ -33,7 +33,20 @@ public class MonsterManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
-            monster = (Monster)factory.CreateMonster(startPosition);
+            SpawnMonster();
         }
+    }
+
+    //----------------------------------------
+    public MonsterFactory[] monsterFactories;
+    public Transform[] spawnPoints;
+    private void SpawnMonster()
+    {
+        MonsterFactory factory = monsterFactories[Random.Range(0, monsterFactories.Length)];
+        Transform spawnPoint = spawnPoints[0];
+
+        factory.CreateMonster(spawnPoint.position);
+
+        //_currentSpawnPoint = (_currentSpawnPoint + 1) % spawnPoints.Length;
     }
 }
