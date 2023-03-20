@@ -9,6 +9,7 @@ using UnityEngine.UI;
 
 public abstract class Monster : MonoBehaviour, IMonster, IObserver
 {
+   // public Score score;
     // Các thông so cua monster
     public float health;
     public float speed;
@@ -66,7 +67,9 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
         healthBarGetDamge();
         if (currentHealth <= 0)
         {
+          
             MonsterSubject.Instance.NotifyOnMonsterKilled(this);
+            
         }
     }
     // doing
@@ -98,7 +101,7 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
     }
 
     public void OnMonsterKilled(Monster monster)
-    {
+    {  
         Die();
     }
 
@@ -110,8 +113,9 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
     public void Die()
     {
         MonsterSubject.Instance.Detach(this);
+       
         // temp
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
         //To Do: remove khoi Monster Object Pool 
     }
 

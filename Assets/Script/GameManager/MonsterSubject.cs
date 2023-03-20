@@ -32,10 +32,15 @@ public class MonsterSubject
 
     public void NotifyOnMonsterDamaged(Monster monster, int damage)
     {
-        foreach (IObserver observer in _observers)
-        {
-            observer.OnMonsterDamaged(monster, damage);
+        try {
+            foreach (IObserver observer in _observers)
+            {
+                observer.OnMonsterDamaged(monster, damage);
+            }
+        } catch (Exception e) {
+            Debug.Log(e);
         }
+
     }
 
     public void NotifyOnMonsterKilled(Monster monster)

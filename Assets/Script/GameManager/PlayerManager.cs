@@ -2,10 +2,14 @@ using DG.Tweening.Core.Easing;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour, IObserver
 {
+    public HealBar healthBar;
+    public GameOverScreen GameOverScreen;
+    int maxPlatform = 0;
     private static PlayerManager instance;
     public static PlayerManager Instance
     {
@@ -18,16 +22,18 @@ public class PlayerManager : MonoBehaviour, IObserver
             return instance;
         }
     }
-
-    public int startingLives = 10;
+    public int startingPoint = 0;
+    public int startingLives = 100;
     public int startingMoney = 100;
     public Text livesText;
     public Text moneyText;
+    public Text pointText;
 
     private int currentLives;
     public int CurrentLives { get => currentLives;}
-
+    private int currentPoint;
     private int currentMoney;
+    public int CurrentPoint { get => currentPoint;}
     public int CurrentMoney { get => currentMoney;}
 
     private void Start()
@@ -35,8 +41,10 @@ public class PlayerManager : MonoBehaviour, IObserver
         MonsterSubject.Instance.Attach(this);
         currentLives = startingLives;
         currentMoney = startingMoney;
-        UpdateLivesText();
+        currentPoint = startingPoint;
+       // UpdateLivesText();
         UpdateMoneyText();
+        healthBar.SetMaxHealth(startingLives);
     }
 
     public void OnMonsterDamaged(Monster monster, int damage)
@@ -57,39 +65,46 @@ public class PlayerManager : MonoBehaviour, IObserver
     public void SubtractLife(int amount)
     {
         currentLives -= amount;
+
         if (currentLives <= 0)
         {
             GameOver();
         }
-        UpdateLivesText();
+        healthBar.SetHealth(CurrentLives);   
+        //UpdateLivesText();
     }
 
     public void AddMoney(int amount)
     {
+        currentPoint += amount;
         currentMoney += amount;
         UpdateMoneyText();
+        
     }
 
     public void SubtractMoney(int amount)
     {
+        currentPoint -= amount;
         currentMoney -= amount;
         UpdateMoneyText();
     }
 
-    private void UpdateLivesText()
-    {
-        livesText.text = "Lives: " + currentLives;
-    }
-
+    
     private void UpdateMoneyText()
     {
-        moneyText.text = "Money: " + currentMoney;
+        moneyText.text = " " + currentMoney;
+        pointText.text = "Points: " + currentPoint;
+
     }
 
     private void GameOver()
     {
+        Time.timeScale = 0f; 
+        GameOverScreen.Setup(maxPlatform);
+        
+
         // Game over logic
     }
 
-    
+
 }
