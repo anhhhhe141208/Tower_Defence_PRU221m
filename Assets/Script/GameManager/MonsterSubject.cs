@@ -28,6 +28,7 @@ public class MonsterSubject
     public void Detach(IObserver observer)
     {
         _observers.Remove(observer);
+        Debug.Log("remove success");
     }
 
     public void NotifyOnMonsterDamaged(Monster monster, int damage)
@@ -35,7 +36,8 @@ public class MonsterSubject
         try {
             foreach (IObserver observer in _observers)
             {
-                observer.OnMonsterDamaged(monster, damage);
+                if (observer != null)
+                    observer.OnMonsterDamaged(monster, damage);
             }
         } catch (Exception e) {
             Debug.Log(e);
@@ -47,7 +49,8 @@ public class MonsterSubject
     {
         foreach (IObserver observer in _observers)
         {
-            observer.OnMonsterKilled(monster);
+            if(observer != null)
+                observer.OnMonsterKilled(monster);
         }
     }
 
