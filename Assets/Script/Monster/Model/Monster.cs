@@ -73,13 +73,9 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
         healthBarGetDamge();
         if (currentHealth <= 0)
         {
-            Debug.Log("2");
             MonsterSubject.Instance.Attach(this);
-            Debug.Log(MonsterSubject.Instance._observers.Count);
             MonsterSubject.Instance.NotifyOnMonsterKilled(this);
             MonsterSubject.Instance.Detach(this);
-            Debug.Log(MonsterSubject.Instance._observers.IndexOf(this));
-            Debug.Log("2-end");
         }
         //Debug.Log(this.GetType() + "health: " + currentHealth);
     }
