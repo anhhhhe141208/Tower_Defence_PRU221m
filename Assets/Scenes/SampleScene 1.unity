@@ -4617,7 +4617,7 @@ MonoBehaviour:
   healthBar: {fileID: 1834194306}
   GameOverScreen: {fileID: 423681994}
   startingPoint: 0
-  startingLives: 10
+  startingLives: 2
   startingMoney: 100
   livesText: {fileID: 1486212047}
   moneyText: {fileID: 1515122089}

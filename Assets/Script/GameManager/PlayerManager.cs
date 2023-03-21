@@ -99,9 +99,15 @@ public class PlayerManager : MonoBehaviour, IObserver
 
     private void GameOver()
     {
-        Time.timeScale = 0f; 
-        GameOverScreen.Setup(maxPlatform);
-        
+        if (GameOverScreen != null)
+        {
+            GameOverScreen gameOverScreen = GameOverScreen.GetComponent<GameOverScreen>();
+            if (gameOverScreen != null)
+            {
+                GameOverScreen.Setup(maxPlatform);
+            }
+        }
+
 
         // Game over logic
     }
