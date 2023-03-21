@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Script/Test1Tower/AdvanceTowerFactory.cs.meta
+guid: f6510ecc56ee23740a69928b63262e14
+========
 guid: 72e1b552970ae4341a558cf8da452168
+>>>>>>>> MenuAnhhhse:Assets/Script/Menu/HealBar.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

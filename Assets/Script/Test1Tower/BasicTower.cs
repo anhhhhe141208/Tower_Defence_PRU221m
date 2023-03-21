@@ -8,6 +8,14 @@ public class BasicTower : Tower
     public Transform barrel;
     public GameObject bullet;
 
+
+    public GameObject towerPrefab;
+    public Vector3 startPosition = new Vector3(3,3,0);
+    public override void createTower()
+    {
+        GameObject towerObj = Instantiate(towerPrefab, startPosition, Quaternion.identity);
+    }
+
     public override void shoot()
     {
         if (currentTarget != null)
@@ -18,4 +26,10 @@ public class BasicTower : Tower
             GameObject newBullet = Instantiate(bullet, barrel.position, pivot.rotation);
         }
     }
+
+   
+
+
+
+
 }

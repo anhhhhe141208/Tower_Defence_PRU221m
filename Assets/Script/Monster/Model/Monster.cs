@@ -6,10 +6,12 @@ using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public abstract class Monster : MonoBehaviour, IMonster, IObserver
 {
-   // public Score score;
+    // public Score score;
     // Các thông so cua monster
     public float health;
     public float speed;
@@ -23,7 +25,6 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
 
     private void Start()
     {
-        MonsterSubject.Instance.Attach(this);
         // set health bar
         healthBar = GetComponentInChildren<HealthBarHandler>().FillAmountImage;
         currentHealth = health;
@@ -34,6 +35,7 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
     private void Awake()
     {
         // set path
+        PlayerManager.Instance.monsterList.Add(this.gameObject);
         path[0] = new Vector3(-16, 5, 0);
         path[1] = new Vector3(-10, 5, 0);
         path[2] = new Vector3(-10, -3, 0);
@@ -54,11 +56,16 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
         this.transform
             .DOPath(path, 15, PathType.Linear)
             .OnWaypointChange(MyWaypointChangeHandler)
-            .OnComplete(() => {
-                MonsterSubject.Instance.NotifyOnMonsterReachedEnd(this);
-            });
+            .OnComplete(reachEnd);
     }
-
+    public void reachEnd()
+    {
+        Debug.Log("1");
+        MonsterSubject.Instance.Attach(this);
+        MonsterSubject.Instance.NotifyOnMonsterReachedEnd(this);
+        MonsterSubject.Instance.Detach(this);
+        Debug.Log("1-end");
+    }
     // take dmg -> -hp, run animation -> die
     public void TakeDamage(int damage)
     {
@@ -67,10 +74,11 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
         healthBarGetDamge();
         if (currentHealth <= 0)
         {
-          
+            MonsterSubject.Instance.Attach(this);
             MonsterSubject.Instance.NotifyOnMonsterKilled(this);
-            
+            MonsterSubject.Instance.Detach(this);
         }
+        //Debug.Log(this.GetType() + "health: " + currentHealth);
     }
     // doing
     public void MyWaypointChangeHandler(int waypointIndex)
@@ -97,7 +105,7 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
 
     public void OnMonsterDamaged(Monster monster, int damage)
     {
-        TakeDamage(damage);
+        // do nothing
     }
 
     public void OnMonsterKilled(Monster monster)
@@ -112,18 +120,17 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
 
     public void Die()
     {
-        MonsterSubject.Instance.Detach(this);
-       
+        resetMonster();
         // temp
-        //Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
         //To Do: remove khoi Monster Object Pool 
     }
 
     public void reachTarget()
     {
-        MonsterSubject.Instance.Detach(this);
+        resetMonster();
         // temp
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
         //To Do: remove khoi Monster Object Pool 
     }
 
@@ -137,5 +144,12 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
         healthBar.fillAmount = Mathf.Lerp(healthBar.fillAmount,
             currentHealth / health,
             10f);
+    }
+
+    public void resetMonster()
+    {
+        currentHealth = health;
+        //transform.position = path[0];
+        transform.DOPause();
     }
 }

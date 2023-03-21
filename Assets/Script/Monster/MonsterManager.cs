@@ -10,7 +10,7 @@ public class MonsterManager : MonoBehaviour
     // Vi tri bat dau cua monster
     public Vector3 startPosition;
 
-    Monster monster;
+    private List<Monster> monster = new List<Monster>();
     void Start()
     {
         // tao monster = monster factory
@@ -23,12 +23,10 @@ public class MonsterManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         //Debug.Log(MonsterSubject.Instance._observers.Count);
         if (Input.GetMouseButtonDown(0))
         {
-            //monster.TakeDamage(5);
-            MonsterSubject.Instance.NotifyOnMonsterDamaged(monster, 5);
+            monster[Random.Range(0, monster.Count)].TakeDamage(5);
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -45,7 +43,7 @@ public class MonsterManager : MonoBehaviour
         MonsterFactory factory = monsterFactories[Random.Range(0, monsterFactories.Length)];
         Transform spawnPoint = spawnPoints[0];
 
-        factory.CreateMonster(spawnPoint.position);
+        monster.Add((Monster)factory.CreateMonster(spawnPoint.position));
 
         //_currentSpawnPoint = (_currentSpawnPoint + 1) % spawnPoints.Length;
     }

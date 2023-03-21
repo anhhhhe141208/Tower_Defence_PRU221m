@@ -7,7 +7,7 @@ public class PigMonsterFactory : MonsterFactory
     // Prefab cua monster
     public GameObject monsterPrefab;
 
-    // Các thông s? c?a monster
+    // C?c th?ng s? c?a monster
     public float health = 100;
     public float speed = 5;
     public int killReward = 5;

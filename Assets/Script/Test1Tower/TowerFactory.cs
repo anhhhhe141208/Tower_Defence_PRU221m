@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class TowerFactory
 {
-    public abstract Tower CreateTower();
+    public abstract void CreateTower();
 }
