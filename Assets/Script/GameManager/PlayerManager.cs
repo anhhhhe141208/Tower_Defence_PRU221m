@@ -22,6 +22,7 @@ public class PlayerManager : MonoBehaviour, IObserver
             return instance;
         }
     }
+    public List<GameObject> monsterList = new List<GameObject>();
     public int startingPoint = 0;
     public int startingLives = 100;
     public int startingMoney = 100;
@@ -30,16 +31,16 @@ public class PlayerManager : MonoBehaviour, IObserver
     public Text pointText;
 
     private int currentLives;
-    public int CurrentLives { get => currentLives;}
     private int currentPoint;
     private int currentMoney;
     public int CurrentPoint { get => currentPoint;}
     public int CurrentMoney { get => currentMoney;}
+    public int CurrentLives { get => currentLives; set => currentLives = value; }
 
     private void Start()
     {
         MonsterSubject.Instance.Attach(this);
-        currentLives = startingLives;
+        CurrentLives = startingLives;
         currentMoney = startingMoney;
         currentPoint = startingPoint;
        // UpdateLivesText();
@@ -64,9 +65,9 @@ public class PlayerManager : MonoBehaviour, IObserver
 
     public void SubtractLife(int amount)
     {
-        currentLives -= amount;
+        CurrentLives -= amount;
 
-        if (currentLives <= 0)
+        if (CurrentLives <= 0)
         {
             GameOver();
         }

@@ -20,7 +20,9 @@ public class GameOverScreen : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1f;
+        PlayerManager.Instance.CurrentLives = PlayerManager.Instance.startingLives;
         SceneManager.LoadScene("SampleScene 1");
+        Debug.Log(PlayerManager.Instance.CurrentLives);
     }
     public void Quit()
     {

@@ -11,7 +11,7 @@ using Image = UnityEngine.UI.Image;
 
 public abstract class Monster : MonoBehaviour, IMonster, IObserver
 {
-   // public Score score;
+    // public Score score;
     // Các thông so cua monster
     public float health;
     public float speed;
@@ -35,6 +35,7 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
     private void Awake()
     {
         // set path
+        PlayerManager.Instance.monsterList.Add(this.gameObject);
         path[0] = new Vector3(-16, 5, 0);
         path[1] = new Vector3(-10, 5, 0);
         path[2] = new Vector3(-10, -3, 0);

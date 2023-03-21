@@ -5,20 +5,17 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] public float damage;
+    [SerializeField] public int damage;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        Monster monster = collision.gameObject.GetComponent<Monster>();
+        monster.TakeDamage(damage);
+        if (monster != null)
         {
             gameObject.SetActive(false);
         }
-        
-        
-        
     }
-
-    
 
     private void Update()
     {

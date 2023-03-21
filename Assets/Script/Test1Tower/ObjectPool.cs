@@ -11,10 +11,6 @@ public class ObjectPool : MonoBehaviour
     private List<GameObject> pooledObjects = new List<GameObject>();
     private int amountToPool = 10;
 
-
-    
-    
-
     [SerializeField] private GameObject bullet;
 
     private void Awake()
@@ -49,8 +45,6 @@ public class ObjectPool : MonoBehaviour
                 return pooledObjects[i];
             }
         }
-        
-        
         
         return null;
     }
