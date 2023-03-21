@@ -85,7 +85,7 @@ public class PlayerManager : MonoBehaviour, IObserver
 
     public void SubtractMoney(int amount)
     {
-        currentPoint -= amount;
+        //currentPoint -= amount;
         currentMoney -= amount;
         UpdateMoneyText();
     }

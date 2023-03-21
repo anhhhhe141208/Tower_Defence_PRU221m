@@ -22,8 +22,6 @@ public class BasicTowerFactory : Tower
     {
         if (currentTarget != null)
         {
-            Enemy enemyScript = currentTarget.GetComponent<Enemy>();
-            enemyScript.takeDamage(damage);
 
             Console.WriteLine("vao ham shoot");
 
