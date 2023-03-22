@@ -28,6 +28,7 @@ public class ObjectPool : MonoBehaviour
             Console.WriteLine("vao tao bullet");
             /*GameObject obj = Instantiate(bullet, barrel.position, pivot.rotation);*/
             GameObject obj = Instantiate(bullet);
+            obj.transform.parent = this.gameObject.transform;
             obj.SetActive(false);
             pooledObjects.Add(obj);
         }

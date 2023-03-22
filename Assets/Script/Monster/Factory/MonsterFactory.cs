@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class MonsterFactory : MonoBehaviour
 {
-    public abstract IMonster CreateMonster(Vector3 startPosition);
+    public abstract IMonster CreateMonster();
 }

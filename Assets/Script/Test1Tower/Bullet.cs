@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Monster monster = collision.gameObject.GetComponent<Monster>();
-        monster.TakeDamage(damage);
+        //monster.TakeDamage(damage);
         if (monster != null)
         {
             gameObject.SetActive(false);

@@ -9,7 +9,7 @@ public class BasicTowerFactory : Tower
     public Transform pivot;
     public Transform barrel;
     public GameObject bullet;
-
+    [SerializeField] private AudioSource PosisionEffect;
 
     public GameObject towerPrefab;
     public Vector3 startPosition = new Vector3(3, 3, 0);
@@ -22,11 +22,9 @@ public class BasicTowerFactory : Tower
     {
         if (currentTarget != null)
         {
-            Enemy enemyScript = currentTarget.GetComponent<Enemy>();
-            enemyScript.takeDamage(damage);
 
             Console.WriteLine("vao ham shoot");
-
+            PosisionEffect.Play();
             /*GameObject newBullet = Instantiate(bullet, barrel.position, pivot.rotation);*/
             GameObject bullet = ObjectPool.instance.GetGameObject();
             

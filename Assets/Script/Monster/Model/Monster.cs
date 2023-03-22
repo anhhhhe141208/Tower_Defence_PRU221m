@@ -16,7 +16,9 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
     public float health;
     public float speed;
     public int killReward;
-    private Vector3[] path = new Vector3[10];
+    public Vector3[] path = new Vector3[15];
+    public GameObject ObjectListWavePoint;
+    private List<GameObject> wavePointList = new List<GameObject>();
 
     public float currentHealth;
     private Image healthBar;
@@ -36,27 +38,32 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
     {
         // set path
         PlayerManager.Instance.monsterList.Add(this.gameObject);
-        path[0] = new Vector3(-16, 5, 0);
-        path[1] = new Vector3(-10, 5, 0);
-        path[2] = new Vector3(-10, -3, 0);
-        path[3] = new Vector3(-15, -3, 0);
-        path[4] = new Vector3(-15, -5, 0);
+        for (int i = 0; i < 15; i++)
+        {
+            Transform child = ObjectListWavePoint.transform.GetChild(i);
+            if (child != null)
+            {
+                wavePointList.Add(ObjectListWavePoint.transform.GetChild(i).gameObject);
+            }
+        }
 
-        path[5] = new Vector3(10, -5, 0);
-        path[6] = new Vector3(10, 5, 0);
-        path[7] = new Vector3(13, 5, 0);
-        path[8] = new Vector3(13, -2, 0);
-        path[9] = new Vector3(15, -2, 0);
-        Move();
+        for (int i = 0; i < wavePointList.Count; i++)
+        {
+            path[i] = wavePointList[i].transform.position;
+        }
     }
-
+    
     public void Move()
     {
-        // monster di chuyen den dich
-        this.transform
-            .DOPath(path, 15, PathType.Linear)
+        if (this.gameObject.activeInHierarchy)
+        {
+            // monster di chuyen den dich
+            this.transform
+            .DOPath(path, speed, PathType.Linear)
+            .SetSpeedBased(true)
             .OnWaypointChange(MyWaypointChangeHandler)
             .OnComplete(reachEnd);
+        }
     }
     public void reachEnd()
     {
@@ -80,7 +87,6 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
         }
         //Debug.Log(this.GetType() + "health: " + currentHealth);
     }
-    // doing
     public void MyWaypointChangeHandler(int waypointIndex)
     {
         // N?u Tween ?i qua waypoint th? hai
@@ -103,6 +109,7 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
     // hanh vi dac biet cua tung loai monster
     public abstract void SpecialAbility();
 
+    // observer
     public void OnMonsterDamaged(Monster monster, int damage)
     {
         // do nothing
@@ -118,6 +125,7 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
         reachTarget();
     }
 
+    //-------------
     public void Die()
     {
         resetMonster();
@@ -145,11 +153,22 @@ public abstract class Monster : MonoBehaviour, IMonster, IObserver
             currentHealth / health,
             10f);
     }
-
+    //-------------------
     public void resetMonster()
     {
         currentHealth = health;
-        //transform.position = path[0];
-        transform.DOPause();
+        transform.DOKill();
+        transform.position = path[0];
+        
     }
+    //-----------------
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Bullet bullet = collision.gameObject.GetComponent<Bullet>();
+        if (bullet != null)
+        {
+            TakeDamage(bullet.damage);
+        }
+    }
+
 }
