@@ -22,7 +22,7 @@ public class MonsterManager : MonoBehaviour
     MonsterFactory factory;
     private IEnumerator SpawnMonster()
     {
-        //timerWave += Time.deltaTime;
+        timerWave += Time.deltaTime;
         if (timerWave > spawnTime) // n?u th?i gian trôi qua v??t quá th?i gian gi?a các l?n sinh
         {
             for (int i = 0; i < 5; i++)

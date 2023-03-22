@@ -30,7 +30,6 @@ public class BuildButtonManager : MonoBehaviour
                     {
                         buildButton.SetActive(true);
                         buildButton.transform.position = Camera.main.WorldToScreenPoint(selectedBuildPoint.transform.position);
-
                     }
                 }
                 else if (buildButton.activeInHierarchy == true)
