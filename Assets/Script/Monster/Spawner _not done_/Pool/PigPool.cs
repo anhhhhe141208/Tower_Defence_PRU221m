@@ -37,10 +37,12 @@ public class PigPool : MonoBehaviour
         {
             if (!pooledObjects[i].activeInHierarchy)
             {
+                pooledObjects[i].SetActive(true);
+                pooledObjects[i].transform.position = pooledObjects[i].GetComponent<Monster>().path[0];
+                pooledObjects[i].GetComponent<Monster>().Move();
                 return pooledObjects[i];
             }
         }
-        Debug.Log(pooledObjects.Count);
         return null;
     }
 }

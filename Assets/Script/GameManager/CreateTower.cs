@@ -14,11 +14,11 @@ public class CreateTower : MonoBehaviour
     public GameObject buildButton;
     void Start()
     {
-        buttonBasicTower.onClick.AddListener(TaskOnClickBasic);
+        //buttonBasicTower.onClick.AddListener(TaskOnClickBasic);
         
-        buttonProTower.onClick.AddListener(TaskOnClickPro);
+        //buttonProTower.onClick.AddListener(TaskOnClickPro);
 
-        buttonAdvancedTower.onClick.AddListener(TaskOnClickAdvanced);
+        //buttonAdvancedTower.onClick.AddListener(TaskOnClickAdvanced);
     }
     public void TaskOnClickBasic()
     {
@@ -27,16 +27,17 @@ public class CreateTower : MonoBehaviour
         GameObject towerObj = Instantiate(towerBasicPrefab, mousePoint, Quaternion.identity);
         buildButton.SetActive(false);
 
-        //PlayerManager.Instance.SubtractMoney(5);
+        PlayerManager.Instance.SubtractMoney(5);
     }
     public void TaskOnClickAdvanced()
     {
+        Debug.Log("advance");
         //Vector2 mousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 mousePoint = Camera.main.ScreenToWorldPoint(buttonAdvancedTower.transform.parent.position);
         GameObject towerObj = Instantiate(towerAdvancedPrefab, mousePoint, Quaternion.identity);
         buildButton.SetActive(false);
 
-        //PlayerManager.Instance.SubtractMoney(5);
+        PlayerManager.Instance.SubtractMoney(10);
     }
     public void TaskOnClickPro()
     {
@@ -45,7 +46,7 @@ public class CreateTower : MonoBehaviour
         GameObject towerObj = Instantiate(towerProPrefab, mousePoint, Quaternion.identity);
         buildButton.SetActive(false);
 
-        //PlayerManager.Instance.SubtractMoney(5);
+        PlayerManager.Instance.SubtractMoney(15);
     }
     private void Update()
     {

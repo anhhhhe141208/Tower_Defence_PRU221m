@@ -1,3 +1,4 @@
+using DG.Tweening.Plugins.Core.PathCore;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,6 +27,7 @@ public class BunnyPool : MonoBehaviour
         {
             GameObject obj = Instantiate(prefab);
             obj.transform.parent = this.gameObject.transform;
+            
             obj.SetActive(false);
             pooledObjects.Add(obj);
         }
@@ -37,10 +39,12 @@ public class BunnyPool : MonoBehaviour
         {
             if (!pooledObjects[i].activeInHierarchy)
             {
+                pooledObjects[i].SetActive(true);
+                pooledObjects[i].transform.position = pooledObjects[i].GetComponent<Monster>().path[0];
+                pooledObjects[i].GetComponent<Monster>().Move();
                 return pooledObjects[i];
             }
         }
-        Debug.Log(pooledObjects.Count);
         return null;
     }
 }
