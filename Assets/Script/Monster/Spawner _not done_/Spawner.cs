@@ -30,7 +30,6 @@ public class Spawner : LamMonoBehaviour
     {
         if (this.prefabs.Count > 0) return;
 
-
         Transform prefabObj = transform.Find("Prefabs");
         foreach (Transform prefab in prefabObj)
         {
@@ -83,7 +82,6 @@ public class Spawner : LamMonoBehaviour
 
     public virtual void Despawn(Transform obj)
     {
-        this.poolObjs.Add(obj);
         obj.gameObject.SetActive(false);
     }
 

@@ -56,6 +56,7 @@ public class PlayerManager : MonoBehaviour, IObserver
     public void OnMonsterKilled(Monster monster)
     {
         AddMoney(monster.killReward);
+        AddCurrentPoint(1);
     }
 
     public void OnMonsterReachedEnd(Monster monster)
@@ -77,7 +78,6 @@ public class PlayerManager : MonoBehaviour, IObserver
 
     public void AddMoney(int amount)
     {
-        currentPoint += amount;
         currentMoney += amount;
         UpdateMoneyText();
         
@@ -85,26 +85,44 @@ public class PlayerManager : MonoBehaviour, IObserver
 
     public void SubtractMoney(int amount)
     {
-        currentPoint -= amount;
         currentMoney -= amount;
         UpdateMoneyText();
     }
 
-    
-    private void UpdateMoneyText()
+    public void AddCurrentPoint(int amount)
     {
-        moneyText.text = " " + currentMoney;
+        currentPoint += amount;
+        UpdatePointText();
+
+    }
+
+    public void SubtractCurrentPoint(int amount)
+    {
+        currentPoint -= amount;
+        UpdatePointText();
+    }
+
+    private void UpdatePointText()
+    {
         pointText.text = "Points: " + currentPoint;
 
     }
 
+    private void UpdateMoneyText()
+    {
+        moneyText.text = " " + currentMoney;
+    }
+
     private void GameOver()
     {
-        Time.timeScale = 0f; 
-        GameOverScreen.Setup(maxPlatform);
-        
-
-        // Game over logic
+        if (GameOverScreen != null)
+        {
+            GameOverScreen gameOverScreen = GameOverScreen.GetComponent<GameOverScreen>();
+            if (gameOverScreen != null)
+            {
+                GameOverScreen.Setup(maxPlatform);
+            }
+        }
     }
 
 

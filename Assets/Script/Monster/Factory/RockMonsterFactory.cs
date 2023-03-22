@@ -15,8 +15,8 @@ public class RockMonsterFactory : MonsterFactory
     public override IMonster CreateMonster(Vector3 startPosition)
     {
         // Tao mot doi tuonng monster tu prefab
-        GameObject monsterObject = Instantiate(monsterPrefab, startPosition, Quaternion.identity);
-
+        GameObject monsterObject = RockPool.Instance.GetGameObject();
+        monsterObject.transform.position = startPosition;
         // thiet lap thong so cho loai monster nay
         var rockMonster = monsterObject.GetComponent<Rock>();
         rockMonster.health = health;

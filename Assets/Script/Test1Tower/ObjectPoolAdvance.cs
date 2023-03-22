@@ -1,13 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
-using UnityEngine.Pool;
 
-public class ObjectPool : MonoBehaviour
+public class ObjectPoolAdvance : MonoBehaviour
 {
-    public static ObjectPool instance;
+    public static ObjectPoolAdvance instance;
     private List<GameObject> pooledObjects = new List<GameObject>();
     private int amountToPool = 10;
 
@@ -15,7 +13,7 @@ public class ObjectPool : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -23,7 +21,7 @@ public class ObjectPool : MonoBehaviour
 
     void Start()
     {
-        for(int i = 0; i < amountToPool; i++)
+        for (int i = 0; i < amountToPool; i++)
         {
             Console.WriteLine("vao tao bullet");
             /*GameObject obj = Instantiate(bullet, barrel.position, pivot.rotation);*/
@@ -32,13 +30,13 @@ public class ObjectPool : MonoBehaviour
             obj.SetActive(false);
             pooledObjects.Add(obj);
         }
-        
+
     }
 
     public GameObject GetGameObject()
     {
         Console.WriteLine("vao ham lay bullet");
-        for (int i=0; i < pooledObjects.Count; i++)
+        for (int i = 0; i < pooledObjects.Count; i++)
         {
             Console.WriteLine(pooledObjects[i].activeInHierarchy);
             if (!pooledObjects[i].activeInHierarchy)
@@ -46,9 +44,7 @@ public class ObjectPool : MonoBehaviour
                 return pooledObjects[i];
             }
         }
-        
+
         return null;
     }
-
-   
 }

@@ -22,13 +22,11 @@ public class ProTowerFactory : Tower
     {
         if (currentTarget != null)
         {
-            Enemy enemyScript = currentTarget.GetComponent<Enemy>();
-            enemyScript.takeDamage(damage);
 
             Console.WriteLine("vao ham shoot");
 
             /*GameObject newBullet = Instantiate(bullet, barrel.position, pivot.rotation);*/
-            GameObject bullet = ObjectPool.instance.GetGameObject();
+            GameObject bullet = ObjectPoolPro.instance.GetGameObject();
 
             if (bullet != null)
             {

@@ -5,13 +5,16 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.Pool;
 
-public class ObjectPool : MonoBehaviour
+public class MonsterPool : MonoBehaviour
 {
-    public static ObjectPool instance;
-    private List<GameObject> pooledObjects = new List<GameObject>();
-    private int amountToPool = 10;
+    private static MonsterPool instance;
+    public static MonsterPool Instance { get => instance; }
 
-    [SerializeField] private GameObject bullet;
+    private List<GameObject> pooledObjects = new List<GameObject>();
+    public int amountToPool = 10;
+
+    [SerializeField] protected GameObject prefab;
+
 
     private void Awake()
     {
@@ -25,28 +28,23 @@ public class ObjectPool : MonoBehaviour
     {
         for(int i = 0; i < amountToPool; i++)
         {
-            Console.WriteLine("vao tao bullet");
-            /*GameObject obj = Instantiate(bullet, barrel.position, pivot.rotation);*/
-            GameObject obj = Instantiate(bullet);
+            GameObject obj = Instantiate(prefab);
             obj.transform.parent = this.gameObject.transform;
             obj.SetActive(false);
             pooledObjects.Add(obj);
         }
-        
     }
 
     public GameObject GetGameObject()
     {
-        Console.WriteLine("vao ham lay bullet");
         for (int i=0; i < pooledObjects.Count; i++)
         {
-            Console.WriteLine(pooledObjects[i].activeInHierarchy);
             if (!pooledObjects[i].activeInHierarchy)
             {
                 return pooledObjects[i];
             }
         }
-        
+        Debug.Log(pooledObjects.Count);
         return null;
     }
 

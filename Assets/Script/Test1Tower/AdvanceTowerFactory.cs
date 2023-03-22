@@ -10,7 +10,6 @@ public class AdvanceTowerFactory : Tower
     public Transform barrel;
     public GameObject bullet;
 
-
     public GameObject towerPrefab;
     public Vector3 startPosition = new Vector3(3, 3, 0);
     public override void createTower()
@@ -22,12 +21,10 @@ public class AdvanceTowerFactory : Tower
     {
         if (currentTarget != null)
         {
-            
-
             Console.WriteLine("vao ham shoot");
 
             /*GameObject newBullet = Instantiate(bullet, barrel.position, pivot.rotation);*/
-            GameObject bullet = ObjectPool.instance.GetGameObject();
+            GameObject bullet = ObjectPoolAdvance.instance.GetGameObject();
 
             if (bullet != null)
             {
@@ -40,7 +37,5 @@ public class AdvanceTowerFactory : Tower
 
     private void Start()
     {
-        /*createTower();*/
-
     }
 }

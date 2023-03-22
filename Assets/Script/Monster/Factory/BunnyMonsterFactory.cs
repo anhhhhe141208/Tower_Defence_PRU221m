@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,7 +16,9 @@ public class BunnyMonsterFactory : MonsterFactory
     public override IMonster CreateMonster(Vector3 startPosition)
     {
         // Tao mot doi tuonng monster tu prefab
-        GameObject monsterObject = Instantiate(monsterPrefab, startPosition, Quaternion.identity);
+        Debug.Log(BunnyPool.Instance.GetGameObject());
+        GameObject monsterObject = BunnyPool.Instance.GetGameObject();
+        monsterObject.transform.position = startPosition;
 
         // thiet lap thong so cho loai monster nay
         var bunnyMonster = monsterObject.GetComponent<Bunny>();

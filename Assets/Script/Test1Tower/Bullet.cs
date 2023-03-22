@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     {
         Monster monster = collision.gameObject.GetComponent<Monster>();
         monster.TakeDamage(damage);
+        Debug.Log(monster.currentHealth);
         if (monster != null)
         {
             gameObject.SetActive(false);
