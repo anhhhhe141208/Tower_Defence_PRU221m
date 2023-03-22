@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class HandleAnimation : MonoBehaviour
 {
-    [SerializeField] private AudioSource PosisionEffect;  
+ //   [SerializeField] private AudioSource PosisionEffect;  
     
     public Animator animator;
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class HandleAnimation : MonoBehaviour
     {
         // start animation
         animator.SetTrigger("startHit");
-        PosisionEffect.Play();
+      //  PosisionEffect.Play();
     }
 
 
